@@ -1153,7 +1153,7 @@ async function copyRecordLink() {
     await navigator.clipboard.writeText(url);
     flashCopyButton("Copied");
   } catch (error) {
-    window.prompt("Copy this record link:", url);
+    window.prompt("Copy this record link", url);
   }
 
   function flashCopyButton(message) {
