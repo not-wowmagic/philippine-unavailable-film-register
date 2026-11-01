@@ -12,5 +12,9 @@ function run(command, args, options = {}) {
 
 run(process.execPath, ["scripts/validate.mjs"]);
 run(process.execPath, ["scripts/build.mjs"]);
-const npx = process.platform === "win32" ? "npx.cmd" : "npx";
-run(npx, ["--yes", "wrangler@latest", "pages", "deploy", "dist", "--project-name", PROJECT_NAME, "--branch", "main"]);
+const deploy = spawnSync(
+  `npx --yes wrangler@latest pages deploy dist --project-name ${PROJECT_NAME} --branch main`,
+  { stdio: "inherit", env, shell: true }
+);
+if (deploy.error) console.error(deploy.error);
+process.exit(deploy.status ?? 1);
