@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────
-   The Unseen — a status register for Philippine film
+   Philippine Unavailable Film Register — a status register for Philippine film
    Plain CSS. No build step.
    ───────────────────────────────────────────────────────────── */
 
@@ -17,7 +17,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("assets/fonts/fraunces-italic-unseen.woff2") format("woff2");
+  src: url("assets/fonts/fraunces-italic-unavailable.woff2") format("woff2");
 }
 
 @font-face {
@@ -244,23 +244,8 @@ h3 {
 .brand {
   display: inline-flex;
   align-items: baseline;
-  gap: 10px;
   text-decoration: none;
   color: var(--paper);
-}
-
-.brand__mark {
-  display: inline-grid;
-  place-items: center;
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgba(243, 237, 225, 0.4);
-  border-radius: 50%;
-  color: #d9a45c;
-  font-family: var(--serif);
-  font-size: 17px;
-  line-height: 1;
-  transform: translateY(2px);
 }
 
 .brand__text {
@@ -310,7 +295,6 @@ h3 {
 .masthead__hero {
   padding-top: clamp(56px, 8vw, 104px);
   padding-bottom: clamp(42px, 6vw, 68px);
-  max-width: 1080px;
 }
 
 .masthead__hero .eyebrow {
@@ -329,6 +313,13 @@ h3 {
   font-style: italic;
   font-weight: 400;
   color: #d9a45c;
+}
+
+.masthead h1.site-title {
+  font-size: clamp(2.9rem, 7.4vw, 6.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
 }
 
 .deck {
@@ -430,36 +421,37 @@ h3 {
 }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 22px;
+  padding: 15px 0 18px;
   border-top: 1px solid rgba(243, 237, 225, 0.18);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9d9485;
 }
 
 .stat {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
-  gap: 10px;
-  padding: 18px 18px 22px 0;
-  border-right: 1px solid rgba(243, 237, 225, 0.12);
-}
-
-.stat:last-child {
-  border-right: 0;
+  gap: 6px;
 }
 
 .stat__num {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 0.9;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
   color: var(--paper);
 }
 
 .stat__label {
-  font-family: var(--mono);
-  font-size: 9.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #9d9485;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
 }
 
 /* ── Register layout ──────────────────────────────────────── */
@@ -1707,13 +1699,6 @@ h3 {
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.footer__brand .brand__mark {
-  width: 22px;
-  height: 22px;
-  font-size: 13px;
 }
 
 .footer strong {
@@ -2479,23 +2464,6 @@ a.card__title {
     padding-bottom: 42px;
   }
 
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stat {
-    border-bottom: 1px solid rgba(243, 237, 225, 0.12);
-  }
-
-  .stat:nth-child(2n) {
-    border-right: 0;
-  }
-
-  .stat:last-child {
-    border-right: 0;
-    border-bottom: 0;
-  }
-
   .register {
     grid-template-columns: 1fr;
     padding-top: 38px;
@@ -2636,10 +2604,6 @@ a.card__title {
 
   .card__reason {
     -webkit-line-clamp: 4;
-  }
-
-  .stats {
-    grid-template-columns: 1fr 1fr;
   }
 
   .results__tools {

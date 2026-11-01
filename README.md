@@ -1,4 +1,4 @@
-# The Unseen
+# Philippine Unavailable Film Register
 
 A static status register for hard-to-find Philippine films, especially shorts and festival titles, plus a separate title index screened against digital catalogs.
 
@@ -47,7 +47,7 @@ The site deploys to **Cloudflare Pages** as a static site. `dist/` is generated 
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Node version:** read from `.nvmrc` (Node 22; the build needs Node 18+)
-4. Optionally set the build-time environment variable `SITE_URL` to the production origin, for example `https://the-unseen.pages.dev` or your custom domain. When present, the build writes `sitemap.xml` and links it from `robots.txt`.
+4. Optionally set the build-time environment variable `SITE_URL` to the production origin, for example `https://philippine-unavailable-film-register.pages.dev` or your custom domain. When present, the build writes `sitemap.xml` and links it from `robots.txt`.
 5. Deploy.
 
 Every push to the production branch rebuilds the site. Pull requests get preview deployments.
@@ -70,7 +70,7 @@ The Content-Security-Policy is deliberately strict: scripts, styles, fonts and i
 
 There are no Functions, no database and no runtime environment variables. `data/` is build-time input and is not served. The site self-hosts its fonts, so there are no third-party font requests.
 
-The build uses absolute paths (`/assets/...`, `/film/<id>/`), so deploy at a domain root. Deploying under a subpath such as `example.com/site/` would need a base-path change in `scripts/build.mjs`.
+The build uses absolute paths (`/assets/...`, `/film/<id>/`) rooted at `BASE_PATH`, which is empty by default. Cloudflare Pages serves from a domain root, so leave it unset. Set it only when deploying under a subpath, for example `BASE_PATH=/repo-name npm run build`.
 
 ---
 

@@ -1,4 +1,4 @@
-/* Static build for The Unseen. Node standard library only. */
+/* Static build for Philippine Unavailable Film Register. Node standard library only. */
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -10,6 +10,17 @@ const ASSETS = path.join(ROOT, "assets");
 const FONTS = path.join(ASSETS, "fonts");
 const DATA = path.join(ROOT, "data");
 const SITE_URL = (process.env.SITE_URL || "").trim().replace(/\/+$/, "");
+const BASE_PATH = normalizeBasePath(process.env.BASE_PATH || "");
+
+function normalizeBasePath(value) {
+  const trimmed = String(value || "").trim().replace(/\/+$/, "");
+  if (!trimmed || trimmed === "/") return "";
+  return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
+}
+
+function sitePath(pathname) {
+  return `${BASE_PATH}${pathname}`;
+}
 
 const STATUS_ORDER = ["banned", "withdrawn", "unreleased", "unavailable", "lost", "found", "partially_found"];
 const CAUSE_ORDER = ["never_distributed", "distribution_ended", "rights_unclear", "archive_only", "no_known_rights_holder"];
@@ -67,7 +78,7 @@ function escapeHtml(value) {
 
 function safeUrl(value, fallback = "#") {
   try {
-    const url = new URL(String(value), "https://the-unseen.invalid/");
+    const url = new URL(String(value), "https://philippine-unavailable-film-register.invalid/");
     if (url.protocol === "http:" || url.protocol === "https:") return url.href;
   } catch {}
   return fallback;
@@ -151,14 +162,22 @@ function formatNumber(value) {
 function renderStats() {
   const counts = countBy(films, (film) => film.status);
   const items = [
-    ["Unavailable", counts.get("unavailable") || 0],
-    ["Banned", counts.get("banned") || 0],
-    ["Lost", counts.get("lost") || 0],
-    ["Found", counts.get("found") || 0],
-    ["Partially found", counts.get("partially_found") || 0],
-    ["Withdrawn", counts.get("withdrawn") || 0],
+    ["Last checked", formatShortDate(datasetChecked), true],
+    ["Entries", films.length, false],
+    ["Unavailable", counts.get("unavailable") || 0, false],
+    ["Banned", counts.get("banned") || 0, false],
+    ["Lost", counts.get("lost") || 0, false],
+    ["Found", counts.get("found") || 0, false],
+    ["Partially found", counts.get("partially_found") || 0, false],
+    ["Withdrawn", counts.get("withdrawn") || 0, false],
   ];
-  return items.map(([label, value]) => `<div class="stat"><span class="stat__num">${value}</span><span class="stat__label">${escapeHtml(label)}</span></div>`).join("");
+  return items
+    .map(([label, value, labelFirst]) => {
+      const labelHtml = `<span class="stat__label">${escapeHtml(label)}</span>`;
+      const valueHtml = `<span class="stat__num">${value}</span>`;
+      return `<div class="stat">${labelFirst ? labelHtml + valueHtml : valueHtml + labelHtml}</div>`;
+    })
+    .join("");
 }
 
 function renderFilterGroups() {
@@ -228,14 +247,14 @@ function cardHtml(film, index) {
         ${cause}
       </div>
       <h3 id="card-title-${escapeHtml(film.id)}">
-        <a class="card__title" href="/film/${encodeURIComponent(film.id)}/">${escapeHtml(film.title)}</a>
+        <a class="card__title" href="${sitePath(`/film/${encodeURIComponent(film.id)}/`)}">${escapeHtml(film.title)}</a>
       </h3>
       ${film.original_title ? `<p class="card__original">${escapeHtml(film.original_title)}</p>` : ""}
       <p class="card__meta">${escapeHtml(meta)}</p>
       <p class="card__reason">${escapeHtml(film.status_detail)}</p>
       <div class="card__foot">
         <div><span>Screened</span><span>${escapeHtml(screening)}</span></div>
-        <a class="card__open" href="/film/${encodeURIComponent(film.id)}/">View record →</a>
+        <a class="card__open" href="${sitePath(`/film/${encodeURIComponent(film.id)}/`)}">View record →</a>
       </div>
     </article>`;
 }
@@ -313,7 +332,7 @@ function changelogHtml() {
     const fromLabel = item.fromLabel || (item.from ? statusLabel(item.from) : "None");
     const toLabel = item.toLabel || statusLabel(item.to);
     const source = item.source ? `<a class="timeline__source" href="${escapeHtml(safeUrl(item.source.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source.publisher)} ↗</a>` : "";
-    return `<article class="timeline__item"><p class="timeline__date">${escapeHtml(formatShortDate(item.date))}</p><div class="timeline__headline"><h3 class="timeline__title"><a href="/film/${encodeURIComponent(item.filmId)}/">${escapeHtml(item.title)}</a></h3><span class="timeline__transition"><span class="from">${escapeHtml(fromLabel)}</span><span aria-hidden="true">→</span><span class="to">${escapeHtml(toLabel)}</span></span></div><p class="timeline__note">${escapeHtml(item.note)}</p>${source}</article>`;
+    return `<article class="timeline__item"><p class="timeline__date">${escapeHtml(formatShortDate(item.date))}</p><div class="timeline__headline"><h3 class="timeline__title"><a href="${sitePath(`/film/${encodeURIComponent(item.filmId)}/`)}">${escapeHtml(item.title)}</a></h3><span class="timeline__transition"><span class="from">${escapeHtml(fromLabel)}</span><span aria-hidden="true">→</span><span class="to">${escapeHtml(toLabel)}</span></span></div><p class="timeline__note">${escapeHtml(item.note)}</p>${source}</article>`;
   }).join("");
 }
 
@@ -369,14 +388,14 @@ function buildAssets() {
   Content-Security-Policy: default-src 'self'; script-src 'self' 'inline-speculation-rules'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
   Cache-Control: public, max-age=0, must-revalidate
 
-/assets/*
+${BASE_PATH}/assets/*
   Cache-Control: public, max-age=31536000, immutable
 `);
 
   return {
-    cssHref: `/assets/${cssName}`,
-    jsHref: `/assets/${jsName}`,
-    fontHref: (file) => `/assets/fonts/${fontMap.get(file)}`,
+    cssHref: sitePath(`/assets/${cssName}`),
+    jsHref: sitePath(`/assets/${jsName}`),
+    fontHref: (file) => sitePath(`/assets/fonts/${fontMap.get(file)}`),
   };
 }
 
@@ -397,13 +416,13 @@ ${noindex ? '  <meta name="robots" content="noindex">\n' : ""}  <meta name="them
 ${preloads}
   <link rel="stylesheet" href="${cssHref}">
   <script type="speculationrules">
-  {"prerender":[{"where":{"href_matches":"/film/*"},"eagerness":"moderate"}]}
+  {"prerender":[{"where":{"href_matches":"${BASE_PATH}/film/*"},"eagerness":"moderate"}]}
   </script>
 </head>`;
 }
 
 function brand() {
-  return `<a class="brand" href="/" aria-label="The Unseen, home"><span class="brand__mark" aria-hidden="true">§</span><span class="brand__text">The Unseen</span></a>`;
+  return `<a class="brand" href="${sitePath("/")}" aria-label="Philippine Unavailable Film Register, home"><span class="brand__text">Philippine Unavailable Film Register</span></a>`;
 }
 
 function ticket() {
@@ -411,7 +430,7 @@ function ticket() {
 }
 
 function pageNav() {
-  return `<nav class="page-nav" aria-label="Site"><a href="/#main">Register</a><a href="/#taxonomy">Statuses</a><a href="/#changelog">Changelog</a><a href="/hard-to-find/">Hard to find</a></nav>`;
+  return `<nav class="page-nav" aria-label="Site"><a href="${sitePath("/#main")}">Register</a><a href="${sitePath("/#taxonomy")}">Statuses</a><a href="${sitePath("/#changelog")}">Changelog</a><a href="${sitePath("/hard-to-find/")}">Hard to find</a></nav>`;
 }
 
 function compactHeader() {
@@ -420,24 +439,17 @@ function compactHeader() {
 
 function homeHeader() {
   return `<header class="masthead">
-    <div class="wrap masthead__top">${brand()}${ticket()}</div>
     <div class="wrap masthead__hero">
-      <p class="eyebrow">Philippine film register</p>
-      <h1>The <em>Unseen</em></h1>
+      <p class="eyebrow">Status register</p>
+      <h1 class="site-title">Philippine <em>Unavailable</em> Film Register</h1>
       <p class="deck">A status register for Philippine films that cannot currently be watched, and for the few that have been found.</p>
-      <nav class="hero-index" aria-label="Page sections">
-        <a href="#main"><span>01</span> Register</a>
-        <a href="#taxonomy"><span>02</span> Statuses</a>
-        <a href="#changelog"><span>03</span> Changelog</a>
-        <a href="/hard-to-find/"><span>04</span> Hard to find</a>
-      </nav>
     </div>
     <div class="wrap"><div id="stats" class="stats" aria-label="Register summary">${renderStats()}</div></div>
   </header>`;
 }
 
 function footer() {
-  return `<footer class="footer"><div class="wrap footer__grid"><div class="footer__brand"><span class="brand__mark" aria-hidden="true">§</span> The Unseen</div></div></footer>`;
+  return `<footer class="footer"><div class="wrap footer__grid"><div class="footer__brand">Philippine Unavailable Film Register</div></div></footer>`;
 }
 
 function documentShell({ title, description, ogType, noindex, bodyClass, bodyAttrs = "", cssHref, jsHref, fontHref, preloadFonts, body }) {
@@ -460,7 +472,7 @@ ${homeHeader()}
   <section class="register wrap" aria-labelledby="results-heading">
     <aside class="filters" aria-label="Filter the register">
       <div class="filters__head"><h2>Filter</h2><button id="clear-filters" class="text-button" type="button" disabled>Reset</button></div>
-      <a class="coverage-button" href="/hard-to-find/"><span class="coverage-button__label">Open hard-to-find index</span><span class="coverage-button__num">${formatNumber(hardFilms.length)}</span><span class="coverage-button__arrow" aria-hidden="true">↓</span></a>
+      <a class="coverage-button" href="${sitePath("/hard-to-find/")}"><span class="coverage-button__label">Open hard-to-find index</span><span class="coverage-button__num">${formatNumber(hardFilms.length)}</span><span class="coverage-button__arrow" aria-hidden="true">↓</span></a>
       <div class="search-field">
         <label for="search">Search title or director</label>
         <div class="search-field__input"><svg class="icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="M12.7 12.7 17 17"></path></svg><input id="search" type="search" placeholder="e.g. Brocka, 1989" autocomplete="off" spellcheck="false"></div>
@@ -496,18 +508,18 @@ ${homeHeader()}
     <article class="taxonomy__item"><h3><span class="status-dot status-dot--found" aria-hidden="true"></span>found / partially_found</h3><p>a copy has been located. Record where and when.</p></article>
   </div><div class="taxonomy__lower"><div class="cause-box"><p class="filter-label">Cause, for unavailable records</p><p class="cause-line"><code>never_distributed</code> <span aria-hidden="true">|</span> <code>distribution_ended</code> <span aria-hidden="true">|</span> <code>rights_unclear</code> <span aria-hidden="true">|</span> <code>archive_only</code> <span aria-hidden="true">|</span> <code>no_known_rights_holder</code></p></div><div class="confidence-box"><p class="filter-label">Confidence</p><p><strong>Confirmed</strong> means a primary source, archive or regulator. <strong>Reported</strong> means news. <strong>Unverified</strong> means a forum or rumour.</p></div></div><div class="callouts"><div class="callout"><p class="callout__label">The lost rule</p><p>Never use "lost" for a film that merely has no streaming link. That is the most common error and it destroys credibility. "Unavailable" is the honest status for a film that screened but has no legal access.</p></div></div></div></section>
   <section id="changelog" class="changelog" aria-labelledby="changelog-heading"><div class="wrap"><div class="section-head"><h2 id="changelog-heading">Status changelog</h2><p class="section-deck">These are recorded changes, with the evidence that prompted them.</p></div><div id="changelog-list" class="timeline">${changelogHtml()}</div></div></section>
-  <section id="about" class="about" aria-labelledby="about-heading"><div class="wrap about__grid"><div class="section-head"><h2 id="about-heading">About this register</h2></div><div class="about__body"><p class="lede">The Unseen is an independent reference work. It is not affiliated with any studio, archive, festival or regulator.</p><p>It covers Philippine films, especially shorts and festival titles, with no current legal access. A few resolved cases stay because the register tracks how films come back, through a print found in an archive or a legal edition released years after a ban.</p><p>Each record starts with a documented screening, production or regulatory fact. Availability is checked against legal streaming, VOD, home video and archive catalogues, and the check date is recorded.</p><p>The 8,000+ figure is an archive estimate for films shot on film stock from 1919 to 2012. It is not a title list. The hard-to-find index starts from 2,034 Wikidata titles, screened against <a href="https://www.justwatch.com/ph/" target="_blank" rel="noopener noreferrer">JustWatch Philippines</a> on 1 November 2026. The corpus estimate comes from <a href="https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge" target="_blank" rel="noopener noreferrer">The Philippine Star, 17 August 2026</a>, citing Leo Katigbak of ABS-CBN Film Archives.</p><p class="small">This is desk research, not an archive visit. Catalogues and region locks change, so a negative finding is not proof that no copy exists. No unauthorized full-film links are included. Corrections should add a source and update the changelog.</p></div></div></section>
+  <section id="about" class="about" aria-labelledby="about-heading"><div class="wrap about__grid"><div class="section-head"><h2 id="about-heading">About this register</h2></div><div class="about__body"><p class="lede">Philippine Unavailable Film Register is an independent reference work. It is not affiliated with any studio, archive, festival or regulator.</p><p>It covers Philippine films, especially shorts and festival titles, with no current legal access. A few resolved cases stay because the register tracks how films come back, through a print found in an archive or a legal edition released years after a ban.</p><p>Each record starts with a documented screening, production or regulatory fact. Availability is checked against legal streaming, VOD, home video and archive catalogues, and the check date is recorded.</p><p>The 8,000+ figure is an archive estimate for films shot on film stock from 1919 to 2012. It is not a title list. The hard-to-find index starts from 2,034 Wikidata titles, screened against <a href="https://www.justwatch.com/ph/" target="_blank" rel="noopener noreferrer">JustWatch Philippines</a> on 1 November 2026. The corpus estimate comes from <a href="https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge" target="_blank" rel="noopener noreferrer">The Philippine Star, 17 August 2026</a>, citing Leo Katigbak of ABS-CBN Film Archives.</p><p class="small">This is desk research, not an archive visit. Catalogues and region locks change, so a negative finding is not proof that no copy exists. No unauthorized full-film links are included. Corrections should add a source and update the changelog.</p></div></div></section>
 </main>
 ${footer()}`;
   return documentShell({
-    title: "The Unseen, Philippine Film Status Register",
+    title: "Philippine Unavailable Film Register",
     description: "A sourced status register for hard-to-find Philippine films, plus a separate index screened against digital catalogs.",
     bodyClass: "home",
     bodyAttrs: `data-page="home" data-dataset-checked="${escapeHtml(datasetChecked)}"`,
     cssHref: assets.cssHref,
     jsHref: assets.jsHref,
     fontHref: assets.fontHref,
-    preloadFonts: ["fraunces-normal-var.woff2", "fraunces-italic-unseen.woff2", "ibm-plex-mono-400.woff2", "ibm-plex-mono-500.woff2"],
+    preloadFonts: ["fraunces-normal-var.woff2", "fraunces-italic-unavailable.woff2", "ibm-plex-mono-400.woff2", "ibm-plex-mono-500.woff2"],
     body,
   });
 }
@@ -516,12 +528,12 @@ function detailPage(film, assets) {
   const body = `<a class="skip-link" href="#main">Skip to the record</a>
 ${compactHeader()}
 <main id="main"><article class="detail-page wrap">
-  <div class="detail-page__bar"><a class="text-button" href="/#main">← Back to register</a><button id="copy-link" class="button" type="button">Copy link</button></div>
+  <div class="detail-page__bar"><a class="text-button" href="${sitePath("/#main")}">← Back to register</a><button id="copy-link" class="button" type="button">Copy link</button></div>
   ${detailHtml(film)}
 </article></main>
 ${footer()}`;
   return documentShell({
-    title: `${film.title} — The Unseen`,
+    title: `${film.title} — Philippine Unavailable Film Register`,
     description: film.status_detail,
     ogType: "article",
     bodyClass: "detail-record",
@@ -537,7 +549,7 @@ ${footer()}`;
 function hardPage(assets) {
   const meta = hard.meta || {};
   const body = `<a class="skip-link" href="#main">Skip to the index</a>
-<header class="masthead masthead--page"><div class="wrap masthead__top">${brand()}${ticket()}</div><div class="wrap masthead__hero"><p class="eyebrow">Philippine film register</p><h1>Hard to find</h1><p class="deck">These titles come from Wikidata, and no active digital offer was found in the checked catalog. They are titles, not status records.</p><nav class="hero-index" aria-label="Page sections"><a href="/"><span>01</span> Register</a><a href="/#taxonomy"><span>02</span> Statuses</a><a href="/#changelog"><span>03</span> Changelog</a></nav></div></header>
+<header class="masthead masthead--page"><div class="wrap masthead__top">${brand()}${ticket()}</div><div class="wrap masthead__hero"><p class="eyebrow">Philippine film register</p><h1>Hard to find</h1><p class="deck">These titles come from Wikidata, and no active digital offer was found in the checked catalog. They are titles, not status records.</p><nav class="hero-index" aria-label="Page sections"><a href="${sitePath("/")}"><span>01</span> Register</a><a href="${sitePath("/#taxonomy")}"><span>02</span> Statuses</a><a href="${sitePath("/#changelog")}"><span>03</span> Changelog</a></nav></div></header>
 <main id="main"><section id="unverified-index" class="unverified" aria-labelledby="unverified-heading"><div class="wrap">
   <div class="section-head unverified__head"><div class="unverified__head-copy"><h2 id="unverified-heading">Hard-to-find index</h2></div></div>
   <div class="unverified__toolbar"><div class="unverified__search"><label for="unverified-search">Search titles</label><input id="unverified-search" type="search" placeholder="Title or year…" autocomplete="off" spellcheck="false"></div><div class="unverified__meta"><p id="unverified-count" class="unverified__count" aria-live="polite">${formatNumber(hardFilms.length)} titles</p></div></div>
@@ -546,7 +558,7 @@ function hardPage(assets) {
 </div></section></main>
 ${footer()}`;
   return documentShell({
-    title: "Hard-to-find index — The Unseen",
+    title: "Hard-to-find index — Philippine Unavailable Film Register",
     description: "A Wikidata-derived index of Philippine films with no active digital offer found in the checked catalog.",
     bodyClass: "index-page",
     bodyAttrs: `data-page="index"`,
@@ -566,12 +578,12 @@ ${compactHeader()}
     <p class="empty__label">404</p>
     <h3>This page is not in the register.</h3>
     <p>The address may be mistyped, or the page may have moved. The register lists every record.</p>
-    <a class="button" href="/">Back to the register</a>
+    <a class="button" href="${sitePath("/")}">Back to the register</a>
   </div>
 </section></main>
 ${footer()}`;
   return documentShell({
-    title: "Page not found — The Unseen",
+    title: "Page not found — Philippine Unavailable Film Register",
     description: "The requested page could not be found.",
     noindex: true,
     bodyClass: "not-found",

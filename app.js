@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────
-   The Unseen — register logic
+   Philippine Unavailable Film Register — register logic
    Plain JavaScript. No dependencies.
    ───────────────────────────────────────────────────────────── */
 
@@ -315,8 +315,6 @@ let unverifiedQuery = "";
 let unverifiedShowAll = false;
 
 const els = {
-  datasetDate: document.getElementById("dataset-date"),
-  entryCount: document.getElementById("entry-count"),
   stats: document.getElementById("stats"),
   search: document.getElementById("search"),
   searchCount: document.getElementById("search-count"),
@@ -506,10 +504,6 @@ function bindStaticEvents() {
 }
 
 function renderAll() {
-  const count = state.films.length;
-  els.datasetDate.textContent = formatShortDate(datasetChecked);
-  els.entryCount.textContent = String(count);
-
   renderStats();
   renderFilters();
   renderResults();
@@ -521,22 +515,22 @@ function renderAll() {
 function renderStats() {
   const counts = countByStatus(state.films);
   const items = [
-    ["Unavailable", counts.get("unavailable") || 0],
-    ["Banned", counts.get("banned") || 0],
-    ["Lost", counts.get("lost") || 0],
-    ["Found", counts.get("found") || 0],
-    ["Partially found", counts.get("partially_found") || 0],
-    ["Withdrawn", counts.get("withdrawn") || 0],
+    ["Last checked", formatShortDate(datasetChecked), true],
+    ["Entries", state.films.length, false],
+    ["Unavailable", counts.get("unavailable") || 0, false],
+    ["Banned", counts.get("banned") || 0, false],
+    ["Lost", counts.get("lost") || 0, false],
+    ["Found", counts.get("found") || 0, false],
+    ["Partially found", counts.get("partially_found") || 0, false],
+    ["Withdrawn", counts.get("withdrawn") || 0, false],
   ];
 
   els.stats.innerHTML = items
-    .map(
-      ([label, value]) => `
-        <div class="stat">
-          <span class="stat__num">${value}</span>
-          <span class="stat__label">${escapeHtml(label)}</span>
-        </div>`
-    )
+    .map(([label, value, labelFirst]) => {
+      const labelHtml = `<span class="stat__label">${escapeHtml(label)}</span>`;
+      const valueHtml = `<span class="stat__num">${value}</span>`;
+      return `<div class="stat">${labelFirst ? labelHtml + valueHtml : valueHtml + labelHtml}</div>`;
+    })
     .join("");
 }
 
