@@ -500,7 +500,7 @@ ${homeHeader()}
         <p class="filter-label">Quick filters</p>
         <label class="toggle"><input type="checkbox" data-toggle="quote"><span>Has a quotable reason</span></label>
         <label class="toggle"><input type="checkbox" data-toggle="noCopy"><span>No known copy</span></label>
-        <label class="toggle"><input type="checkbox" data-toggle="recent"><span>Recently checked <small>within 30 days</small></span></label>
+        <label class="toggle"><input type="checkbox" data-toggle="recent"><span>Recently checked <small>in the last 30 days</small></span></label>
       </div>
     </aside>
     <div class="results">
