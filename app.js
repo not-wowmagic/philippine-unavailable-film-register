@@ -781,7 +781,7 @@ function detailHtml(film) {
   const runtime = film.runtime_min ? `${film.runtime_min} min` : "";
   const type = typeLabel(film.type);
   const quote = quoteHtml(film);
-  const watch = watchHtml(film, fullDate);
+  const watch = watchHtml(film);
   const sources = sourcesHtml(film);
   const festivals = festivalsHtml(film);
   const screening = screeningHtml(film);
@@ -870,11 +870,11 @@ function quoteHtml(film) {
     </section>`;
 }
 
-function watchHtml(film, fullDate) {
+function watchHtml(film) {
   if (!film.where_to_watch || film.where_to_watch.length === 0) {
     return `
       <div class="watch watch--finding">
-        <p>No legal streaming, VOD or archive access was found as of ${escapeHtml(fullDate)}.</p>
+        <p>No legal streaming, VOD or archive access was found.</p>
       </div>`;
   }
 

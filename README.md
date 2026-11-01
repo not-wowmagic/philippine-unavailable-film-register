@@ -1,10 +1,8 @@
 # Philippine Unavailable Film Register
 
-The Philippine Unavailable Film Register lists Philippine films that are hard to watch. Most are shorts and festival titles. Each record says what happened to the film, whether a legal copy exists, and where the evidence comes from. A few films have been found, and they stay in the register because access can change.
+The Philippine Unavailable Film Register lists Philippine films that are hard to watch. It focuses on shorts and festival titles. Each record says what happened to the film, whether a legal copy exists, and where the evidence comes from. A few films have been found, and they stay in the register because access can change.
 
-The site is live at [philippine-unavailable-film-register.pages.dev](https://philippine-unavailable-film-register.pages.dev).
-
-The site is a static build with no backend and no database. The verified records are in [`data/films.json`](data/films.json). A separate hard-to-find index is in [`data/hard-to-find.json`](data/hard-to-find.json). The index lists 1,752 titles that had no active digital offer in a check of JustWatch Philippines on 1 November 2026.
+The site is live at [philippine-unavailable-film-register.pages.dev](https://philippine-unavailable-film-register.pages.dev). It is a static build with no backend and no database. The verified records are in [`data/films.json`](data/films.json). A separate hard-to-find index is in [`data/hard-to-find.json`](data/hard-to-find.json). The index lists 1,752 titles that had no active digital offer in a check of JustWatch Philippines.
 
 ## Pages
 
@@ -129,8 +127,8 @@ The full 2,034-title source index is in [`data/unverified.json`](data/unverified
 ## Notes on some records
 
 - *Bloom Where You Are Planted*, 2025, is excluded because it is still in public circulation in 2026, not for lack of sources. It won Best Film at [Cinemalaya 2025](https://www.cinemalaya.org/bloom-where-you-are-planted/), where the festival lists it at 82 minutes. It screened at a [24 September 2026 campus event](https://astig.ph/bloom-where-you-are-planted-cinemalaya-documentary-pup-bantayog-2026/) and at a [27 October 2026 screening at UP Manila](https://www.facebook.com/altermidya/posts/bloom-where-you-are-planted-screening-sa-up-manila-october-27-2026-tuesday-100-p/1631495252350950/). If those screenings end and no legal streaming or archive access appears, it can be added as `unavailable` after a fresh availability check.
-- The seed lists *Aurora* as 2008. PEP.ph, IMDb and MUBI date it to 2009. The record uses 2009 and notes the difference. The X rating was given twice. The 19 January 2009 UP Cine Adarna premiere took place where MTRCB ratings did not apply.
-- The seed title *Pusang Gala* refers to *Mga Pusang Gala*, released internationally as *Stray Cats*. The record uses the Filipino title and records the English title as `original_title`.
+- The original list dates *Aurora* to 2008. PEP.ph, IMDb and MUBI date it to 2009. The record uses 2009 and notes the difference. The X rating was given twice. The 19 January 2009 UP Cine Adarna premiere took place where MTRCB ratings did not apply.
+- The original list calls the film *Pusang Gala*. The record uses *Mga Pusang Gala* and records the international title *Stray Cats* as `original_title`.
 - *Lost Sabungeros* was withdrawn from Cinemalaya 2024, then screened at QCinema on 9 November 2024 and on a 2026 campus tour. It is `unavailable`, not `withdrawn`. The withdrawal is in the changelog.
 - *Orapronobis* has reports of a censors' ban that was never formally lifted. No quotable regulator or court decision was found, so it is `unavailable`, not `banned`. If a quotable decision turns up, change the status and add a changelog entry.
 - *Agent 00*, *Batman Fights Dracula*, *Scotch on the Rocks to Remember, Black Coffee to Forget* and *Milagro sa Porta Vaga* have no located copy in the sources checked. None has the archive or historian statement that `lost` requires, so they are `unavailable` with `known_copy` set to `null`. The "no known copy" filter shows that without calling them lost.
@@ -266,11 +264,11 @@ The validator checks the following.
 - The hard-to-find index has valid retained, removed and unmatched counts, per-title availability dates and source URLs.
 - The digitally-available audit file has an available JustWatch check for every removed title.
 
-Current output.
+The current output is below.
 
 ```text
 ✓ 34 records validated against the register schema.
-  status: withdrawn 1 · banned 7 · unavailable 21 · found 3 · lost 1 · partially_found 1
+  status: withdrawn 1 · banned 7 · unavailable 21 · found 3 · partially_found 1 · lost 1
   confidence: reported 20 · confirmed 6 · unverified 8
   data last checked: 2026-10-31
   public index: 2,034 titles (Wikidata)

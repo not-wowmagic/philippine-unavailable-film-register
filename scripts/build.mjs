@@ -264,9 +264,9 @@ function quoteHtml(film) {
   return `<section class="quote-block"><p class="quote__label">Quoted reason</p><blockquote>"${escapeHtml(film.quoted_reason.text)}"</blockquote><footer>${escapeHtml(film.quoted_reason.attributed_to)} · <a href="${escapeHtml(safeUrl(film.quoted_reason.source_url))}" target="_blank" rel="noopener noreferrer">source</a></footer></section>`;
 }
 
-function watchHtml(film, fullDate) {
+function watchHtml(film) {
   if (!film.where_to_watch || film.where_to_watch.length === 0) {
-    return `<div class="watch watch--finding"><p>No legal streaming, VOD or archive access was found as of ${escapeHtml(fullDate)}.</p></div>`;
+    return `<div class="watch watch--finding"><p>No legal streaming, VOD or archive access was found.</p></div>`;
   }
   const items = film.where_to_watch.map((entry) => `<li><div class="watch__platform">${escapeHtml(entry.platform)}</div><a href="${escapeHtml(safeUrl(entry.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(prettyUrl(entry.url))}</a>${entry.note ? `<p>${escapeHtml(entry.note)}</p>` : ""}</li>`).join("");
   return `<ul class="watch-list">${items}</ul>`;
@@ -318,7 +318,7 @@ function detailHtml(film) {
       <div class="detail__main">
         <section class="detail-section"><h3>Status</h3><p>${escapeHtml(STATUS_DEFINITIONS[film.status] || "")}</p><p class="muted">Availability checked ${escapeHtml(fullDate)}.</p></section>
         ${quoteHtml(film)}
-        <section class="detail-section"><h3>Where to watch</h3>${watchHtml(film, fullDate)}</section>
+        <section class="detail-section"><h3>Where to watch</h3>${watchHtml(film)}</section>
         ${details}
         ${film.notes ? `<section class="detail-section"><h3>Notes</h3><p>${escapeHtml(film.notes)}</p></section>` : ""}
         <section class="detail-section"><h3>Sources</h3><ol class="sources">${sourcesHtml(film)}</ol></section>
