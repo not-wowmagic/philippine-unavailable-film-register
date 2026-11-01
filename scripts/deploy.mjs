@@ -12,8 +12,5 @@ function run(command, args, options = {}) {
 
 run(process.execPath, ["scripts/validate.mjs"]);
 run(process.execPath, ["scripts/build.mjs"]);
-run(
-  "npx",
-  ["--yes", "wrangler@latest", "pages", "deploy", "dist", "--project-name", PROJECT_NAME, "--branch", "main"],
-  { shell: process.platform === "win32" }
-);
+const npx = process.platform === "win32" ? "npx.cmd" : "npx";
+run(npx, ["--yes", "wrangler@latest", "pages", "deploy", "dist", "--project-name", PROJECT_NAME, "--branch", "main"]);

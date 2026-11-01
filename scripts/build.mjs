@@ -269,7 +269,7 @@ function watchHtml(film, fullDate) {
     return `<div class="watch watch--finding"><p>No legal streaming, VOD or archive access was found as of ${escapeHtml(fullDate)}.</p></div>`;
   }
   const items = film.where_to_watch.map((entry) => `<li><div class="watch__platform">${escapeHtml(entry.platform)}</div><a href="${escapeHtml(safeUrl(entry.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(prettyUrl(entry.url))}</a>${entry.note ? `<p>${escapeHtml(entry.note)}</p>` : ""}</li>`).join("");
-  return `<ul class="watch-list">${items}</ul><p class="watch__checked">Availability checked ${escapeHtml(fullDate)}.</p>`;
+  return `<ul class="watch-list">${items}</ul>`;
 }
 
 function sourcesHtml(film) {
@@ -299,6 +299,9 @@ function detailHtml(film) {
   const type = typeLabel(film.type);
   const metaParts = [film.year ? String(film.year) : "", film.director ? `dir. ${film.director}` : "", runtime, type].filter(Boolean);
   const metaLine = metaParts.join(" · ");
+  const details = film.original_title || (film.festivals && film.festivals.length)
+    ? `<section class="detail-section"><h3>Details</h3><dl class="record-grid">${film.original_title ? `<div><dt>Original title</dt><dd>${escapeHtml(film.original_title)}</dd></div>` : ""}<div><dt>Festivals</dt><dd>${festivalsHtml(film)}</dd></div></dl></section>`
+    : "";
   return `
     <header class="detail__head status--${film.status}">
       <div class="detail__kicker">
@@ -316,7 +319,7 @@ function detailHtml(film) {
         <section class="detail-section"><h3>Status</h3><p>${escapeHtml(STATUS_DEFINITIONS[film.status] || "")}</p><p class="muted">Availability checked ${escapeHtml(fullDate)}.</p></section>
         ${quoteHtml(film)}
         <section class="detail-section"><h3>Where to watch</h3>${watchHtml(film, fullDate)}</section>
-        <section class="detail-section"><h3>Details</h3><dl class="record-grid">${film.original_title ? `<div><dt>Original title</dt><dd>${escapeHtml(film.original_title)}</dd></div>` : ""}<div><dt>Festivals</dt><dd>${festivalsHtml(film)}</dd></div><div><dt>Record ID</dt><dd class="mono">${escapeHtml(film.id)}</dd></div></dl></section>
+        ${details}
         ${film.notes ? `<section class="detail-section"><h3>Notes</h3><p>${escapeHtml(film.notes)}</p></section>` : ""}
         <section class="detail-section"><h3>Sources</h3><ol class="sources">${sourcesHtml(film)}</ol></section>
       </div>
@@ -456,7 +459,7 @@ function homeHeader() {
     <div class="wrap masthead__hero">
       <p class="eyebrow">Status register</p>
       <h1 class="site-title">Philippine <em>Unavailable</em> Film Register</h1>
-      <p class="deck">A status register for Philippine films that cannot currently be watched, and for the few that have been found.</p>
+      <p class="deck">A status register for Philippine films with no current legal way to watch, and for the few that have been found.</p>
     </div>
     <div class="wrap"><div id="stats" class="stats" aria-label="Register summary">${renderStats()}</div></div>
   </header>`;
@@ -512,22 +515,22 @@ ${homeHeader()}
       <div id="empty" class="empty" hidden><h3>No records match those filters.</h3><p>Try removing a filter or using a shorter title.</p><button id="empty-reset" class="button" type="button" disabled>Clear all filters</button></div>
     </div>
   </section>
-  <noscript><div class="wrap notice"><strong>Filtering and sorting need JavaScript.</strong> All ${films.length} records are listed below.</div></noscript>
+  <noscript><div class="wrap notice"><strong>Filtering and sorting need JavaScript.</strong> All ${films.length} records are still listed below.</div></noscript>
   <section id="taxonomy" class="taxonomy" aria-labelledby="taxonomy-heading"><div class="wrap"><div class="section-head"><h2 id="taxonomy-heading">Status definitions</h2></div><div class="taxonomy__grid">
-    <article class="taxonomy__item"><h3><span class="status-dot status-dot--banned" aria-hidden="true"></span>banned</h3><p>regulator or court blocked exhibition. Needs a quotable decision, or a report quoting one.</p></article>
-    <article class="taxonomy__item"><h3><span class="status-dot status-dot--withdrawn" aria-hidden="true"></span>withdrawn</h3><p>accepted or scheduled, then pulled before public screening. Needs a dated report.</p></article>
+    <article class="taxonomy__item"><h3><span class="status-dot status-dot--banned" aria-hidden="true"></span>banned</h3><p>a regulator or court blocked exhibition. It needs a quotable decision, or a report quoting one.</p></article>
+    <article class="taxonomy__item"><h3><span class="status-dot status-dot--withdrawn" aria-hidden="true"></span>withdrawn</h3><p>accepted or scheduled, then pulled before public screening. It needs a dated report.</p></article>
     <article class="taxonomy__item"><h3><span class="status-dot status-dot--unreleased" aria-hidden="true"></span>unreleased</h3><p>finished or partly finished, never publicly exhibited.</p></article>
-    <article class="taxonomy__item"><h3><span class="status-dot status-dot--unavailable" aria-hidden="true"></span>unavailable</h3><p>screened at least once publicly, but no current legal way to watch it. Needs a documented screening and an empty availability search.</p></article>
-    <article class="taxonomy__item"><h3><span class="status-dot status-dot--lost" aria-hidden="true"></span>lost</h3><p>no known copy in any archive, studio or private collection. Needs an archive or historian statement, not "I can't find it".</p></article>
+    <article class="taxonomy__item"><h3><span class="status-dot status-dot--unavailable" aria-hidden="true"></span>unavailable</h3><p>screened at least once publicly, but no current legal way to watch it. It needs a documented screening and an availability search that found nothing.</p></article>
+    <article class="taxonomy__item"><h3><span class="status-dot status-dot--lost" aria-hidden="true"></span>lost</h3><p>no known copy in any archive, studio or private collection. It needs an archive or historian statement, not "I can't find it".</p></article>
     <article class="taxonomy__item"><h3><span class="status-dot status-dot--found" aria-hidden="true"></span>found / partially_found</h3><p>a copy has been located. Record where and when.</p></article>
-  </div><div class="taxonomy__lower"><div class="cause-box"><p class="filter-label">Cause, for unavailable records</p><p class="cause-line"><code>never_distributed</code> <span aria-hidden="true">|</span> <code>distribution_ended</code> <span aria-hidden="true">|</span> <code>rights_unclear</code> <span aria-hidden="true">|</span> <code>archive_only</code> <span aria-hidden="true">|</span> <code>no_known_rights_holder</code></p></div><div class="confidence-box"><p class="filter-label">Confidence</p><p><strong>Confirmed</strong> means a primary source, archive or regulator. <strong>Reported</strong> means news. <strong>Unverified</strong> means a forum or rumour.</p></div></div><div class="callouts"><div class="callout"><p class="callout__label">The lost rule</p><p>Never use "lost" for a film that merely has no streaming link. That is the most common error and it destroys credibility. "Unavailable" is the honest status for a film that screened but has no legal access.</p></div></div></div></section>
-  <section id="changelog" class="changelog" aria-labelledby="changelog-heading"><div class="wrap"><div class="section-head"><h2 id="changelog-heading">Status changelog</h2><p class="section-deck">These are recorded changes, with the evidence that prompted them.</p></div><div id="changelog-list" class="timeline">${changelogHtml()}</div></div></section>
-  <section id="about" class="about" aria-labelledby="about-heading"><div class="wrap about__grid"><div class="section-head"><h2 id="about-heading">About this register</h2></div><div class="about__body"><p class="lede">Philippine Unavailable Film Register is an independent reference work. It is not affiliated with any studio, archive, festival or regulator.</p><p>It covers Philippine films, especially shorts and festival titles, with no current legal access. A few resolved cases stay because the register tracks how films come back, through a print found in an archive or a legal edition released years after a ban.</p><p>Each record starts with a documented screening, production or regulatory fact. Availability is checked against legal streaming, VOD, home video and archive catalogues, and the check date is recorded.</p><p>The 8,000+ figure is an archive estimate for films shot on film stock from 1919 to 2012. It is not a title list. The hard-to-find index starts from 2,034 Wikidata titles, screened against <a href="https://www.justwatch.com/ph/" target="_blank" rel="noopener noreferrer">JustWatch Philippines</a> on 1 November 2026. The corpus estimate comes from <a href="https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge" target="_blank" rel="noopener noreferrer">The Philippine Star, 17 August 2026</a>, citing Leo Katigbak of ABS-CBN Film Archives.</p><p class="small">This is desk research, not an archive visit. Catalogues and region locks change, so a negative finding is not proof that no copy exists. No unauthorized full-film links are included. Corrections should add a source and update the changelog.</p></div></div></section>
+  </div><div class="taxonomy__lower"><div class="cause-box"><p class="filter-label">Cause, for unavailable records</p><p class="cause-line"><code>never_distributed</code> <span aria-hidden="true">|</span> <code>distribution_ended</code> <span aria-hidden="true">|</span> <code>rights_unclear</code> <span aria-hidden="true">|</span> <code>archive_only</code> <span aria-hidden="true">|</span> <code>no_known_rights_holder</code></p></div><div class="confidence-box"><p class="filter-label">Confidence</p><p><strong>Confirmed</strong> means a primary source, archive or regulator. <strong>Reported</strong> means a news report. <strong>Unverified</strong> means a forum or rumour.</p></div></div><div class="callouts"><div class="callout"><p class="callout__label">The lost rule</p><p>Do not use "lost" for a film that only has no streaming link. "Lost" means no archive, studio or private collection has a copy. A film that screened but has no legal access is "unavailable".</p></div></div></div></section>
+  <section id="changelog" class="changelog" aria-labelledby="changelog-heading"><div class="wrap"><div class="section-head"><h2 id="changelog-heading">Status changelog</h2><p class="section-deck">Each entry links to the source behind it.</p></div><div id="changelog-list" class="timeline">${changelogHtml()}</div></div></section>
+  <section id="about" class="about" aria-labelledby="about-heading"><div class="wrap about__grid"><div class="section-head"><h2 id="about-heading">About this register</h2></div><div class="about__body"><p class="lede">The register is independent and is not affiliated with any studio, archive, festival or regulator.</p><p>It covers Philippine films with no current legal access, especially shorts and festival titles. A few found films stay because the register also tracks how films come back, through an archive print or a legal edition released years after a ban.</p><p>Each record starts with a documented screening, production or regulatory fact. Availability is checked against legal streaming, VOD, home video and archive catalogs, and the check date is recorded.</p><p>The 8,000+ figure is an archive estimate for films shot on film stock from 1919 to 2012. It is not a title list. The hard-to-find index starts from 2,034 Wikidata titles, screened against <a href="https://www.justwatch.com/ph/" target="_blank" rel="noopener noreferrer">JustWatch Philippines</a> on 1 November 2026. The estimate comes from <a href="https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge" target="_blank" rel="noopener noreferrer">The Philippine Star, 17 August 2026</a>, citing Leo Katigbak of ABS-CBN Film Archives.</p><p class="small">This is desk research, not an archive visit. Catalogs and region locks change, so a negative finding is not proof that no copy exists. No unauthorized full-film links are included. A correction needs a source and a changelog entry.</p></div></div></section>
 </main>
 ${footer()}`;
   return documentShell({
     title: "Philippine Unavailable Film Register",
-    description: "A sourced status register for hard-to-find Philippine films, plus a separate index screened against digital catalogs.",
+    description: "A sourced register of hard-to-find Philippine films, plus a separate index of titles with no active digital offer.",
     bodyClass: "home",
     bodyAttrs: `data-page="home" data-dataset-checked="${escapeHtml(datasetChecked)}"`,
     cssHref: assets.cssHref,
@@ -547,7 +550,7 @@ ${compactHeader()}
 </article></main>
 ${footer()}`;
   return documentShell({
-    title: `${film.title} — Philippine Unavailable Film Register`,
+    title: `${film.title} | Philippine Unavailable Film Register`,
     description: film.status_detail,
     ogType: "article",
     bodyClass: "detail-record",
@@ -563,17 +566,17 @@ ${footer()}`;
 function hardPage(assets) {
   const meta = hard.meta || {};
   const body = `<a class="skip-link" href="#main">Skip to the index</a>
-<header class="masthead masthead--page"><div class="wrap masthead__top">${brand()}${ticket()}</div><div class="wrap masthead__hero"><p class="eyebrow">Philippine film register</p><h1>Hard to find</h1><p class="deck">These titles come from Wikidata, and no active digital offer was found in the checked catalog. They are titles, not status records.</p><nav class="hero-index" aria-label="Page sections"><a href="${sitePath("/")}"><span>01</span> Register</a><a href="${sitePath("/#taxonomy")}"><span>02</span> Statuses</a><a href="${sitePath("/#changelog")}"><span>03</span> Changelog</a></nav></div></header>
+<header class="masthead masthead--page"><div class="wrap masthead__top">${brand()}${ticket()}</div><div class="wrap masthead__hero"><p class="eyebrow">Philippine film register</p><h1>Hard to find</h1><p class="deck">Titles from Wikidata with no active digital offer.</p><nav class="hero-index" aria-label="Page sections"><a href="${sitePath("/")}"><span>01</span> Register</a><a href="${sitePath("/#taxonomy")}"><span>02</span> Statuses</a><a href="${sitePath("/#changelog")}"><span>03</span> Changelog</a></nav></div></header>
 <main id="main"><section id="unverified-index" class="unverified" aria-labelledby="unverified-heading"><div class="wrap">
   <div class="section-head unverified__head"><div class="unverified__head-copy"><h2 id="unverified-heading">Hard-to-find index</h2></div></div>
   <div class="unverified__toolbar"><div class="unverified__search"><label for="unverified-search">Search titles</label><input id="unverified-search" type="search" placeholder="Title or year…" autocomplete="off" spellcheck="false"></div><div class="unverified__meta"><p id="unverified-count" class="unverified__count" aria-live="polite">${formatNumber(hardFilms.length)} titles</p></div></div>
   <div class="unverified__table-wrap"><table class="unverified__table"><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">Source</th></tr></thead><tbody id="unverified-rows">${hardRowsHtml()}</tbody></table></div>
-  <p class="unverified__note">Wikidata, retrieved <span>${escapeHtml(formatDate(meta.retrieved))}</span>. Availability checked against JustWatch Philippines on <span>${escapeHtml(formatDate(meta.availability_checked))}</span>. <span>${formatNumber(meta.removed_count || 0)}</span> titles with an active offer were removed. <span>${formatNumber(meta.unmatched_count || 0)}</span> had no exact match and are marked unchecked. No title here is claimed lost, banned or unavailable.</p>
+  <p class="unverified__note">Wikidata, retrieved <span>${escapeHtml(formatDate(meta.retrieved))}</span>. Availability checked against JustWatch Philippines on <span>${escapeHtml(formatDate(meta.availability_checked))}</span>. <span>${formatNumber(meta.removed_count || 0)}</span> titles with an active offer were removed. <span>${formatNumber(meta.unmatched_count || 0)}</span> had no exact match and are marked unchecked. A title here is not claimed lost, banned or unavailable.</p>
 </div></section></main>
 ${footer()}`;
   return documentShell({
-    title: "Hard-to-find index — Philippine Unavailable Film Register",
-    description: "A Wikidata-derived index of Philippine films with no active digital offer found in the checked catalog.",
+    title: "Hard-to-find index | Philippine Unavailable Film Register",
+    description: "An index of Philippine films with no active digital offer found on JustWatch Philippines.",
     bodyClass: "index-page",
     bodyAttrs: `data-page="index"`,
     cssHref: assets.cssHref,
@@ -590,14 +593,14 @@ ${compactHeader()}
 <main id="main"><section class="wrap detail-page">
   <div class="empty">
     <p class="empty__label">404</p>
-    <h3>This page is not in the register.</h3>
-    <p>The address may be mistyped, or the page may have moved. The register lists every record.</p>
+    <h3>This page does not exist.</h3>
+    <p>The address may be wrong, or the page may have moved.</p>
     <a class="button" href="${sitePath("/")}">Back to the register</a>
   </div>
 </section></main>
 ${footer()}`;
   return documentShell({
-    title: "Page not found — Philippine Unavailable Film Register",
+    title: "Page not found | Philippine Unavailable Film Register",
     description: "The requested page could not be found.",
     noindex: true,
     bodyClass: "not-found",

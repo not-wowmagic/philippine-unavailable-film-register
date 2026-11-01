@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────
-   Philippine Unavailable Film Register — a status register for Philippine film
+   Philippine Unavailable Film Register - a status register for Philippine film
    Plain CSS. No build step.
    ───────────────────────────────────────────────────────────── */
 
@@ -2168,7 +2168,7 @@ a.card__title {
 }
 
 .quote-block::before {
-  content: "“";
+  content: '"';
   position: absolute;
   top: -18px;
   right: 14px;

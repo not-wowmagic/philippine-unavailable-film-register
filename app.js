@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────
-   Philippine Unavailable Film Register — register logic
+   Philippine Unavailable Film Register - register logic
    Plain JavaScript. No dependencies.
    ───────────────────────────────────────────────────────────── */
 
@@ -786,6 +786,15 @@ function detailHtml(film) {
   const festivals = festivalsHtml(film);
   const screening = screeningHtml(film);
   const knownCopy = knownCopyHtml(film);
+  const details = film.original_title || (film.festivals && film.festivals.length)
+    ? `<section class="detail-section">
+          <h3>Details</h3>
+          <dl class="record-grid">
+            ${film.original_title ? `<div><dt>Original title</dt><dd>${escapeHtml(film.original_title)}</dd></div>` : ""}
+            <div><dt>Festivals</dt><dd>${festivals}</dd></div>
+          </dl>
+        </section>`
+    : "";
   const notes = film.notes
     ? `<section class="detail-section"><h3>Notes</h3><p>${escapeHtml(film.notes)}</p></section>`
     : "";
@@ -824,14 +833,7 @@ function detailHtml(film) {
           ${watch}
         </section>
 
-        <section class="detail-section">
-          <h3>Details</h3>
-          <dl class="record-grid">
-            ${film.original_title ? `<div><dt>Original title</dt><dd>${escapeHtml(film.original_title)}</dd></div>` : ""}
-            <div><dt>Festivals</dt><dd>${festivals}</dd></div>
-            <div><dt>Record ID</dt><dd class="mono">${escapeHtml(film.id)}</dd></div>
-          </dl>
-        </section>
+        ${details}
 
         ${notes}
 
@@ -888,8 +890,7 @@ function watchHtml(film, fullDate) {
     .join("");
 
   return `
-    <ul class="watch-list">${items}</ul>
-    <p class="watch__checked">Availability checked ${escapeHtml(fullDate)}.</p>`;
+    <ul class="watch-list">${items}</ul>`;
 }
 
 function sourcesHtml(film) {
@@ -1007,7 +1008,7 @@ async function loadUnverifiedIndex() {
     renderUnverified();
   } catch (error) {
     els.unverifiedRows.innerHTML = `
-      <tr><td colspan="4" class="unverified__empty">The hard-to-find index could not load. ${escapeHtml(error.message)}</td></tr>`;
+      <tr><td colspan="4" class="unverified__empty">The hard-to-find index could not load. Reload the page.</td></tr>`;
     if (els.unverifiedCount) els.unverifiedCount.textContent = "Hard-to-find index unavailable";
   }
 }
@@ -1383,6 +1384,6 @@ function showLoadError(error) {
   els.cards.innerHTML = `
     <div class="load-error">
       <h3>The register could not load.</h3>
-      <p>Serve this folder over HTTP and reload the page.</p>
+      <p>Reload the page. If it still fails, try again later.</p>
     </div>`;
 }

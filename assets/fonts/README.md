@@ -7,9 +7,9 @@ still a one-word subset because only `Unavailable` is italic.
 
 | File | Family / style | Weight | Size | Subset |
 | --- | --- | --- | ---: | --- |
-| `fraunces-normal-var.woff2` | Fraunces normal | 400–500 | 25,360 B | printable Latin-1, General Punctuation, arrows; optical size pinned at 110 |
+| `fraunces-normal-var.woff2` | Fraunces normal | 400 to 500 | 25,360 B | printable Latin-1, General Punctuation, arrows; optical size pinned at 110 |
 | `fraunces-italic-unavailable.woff2` | Fraunces italic | 400 | 3,528 B | only `Unavailable` (the sole italic text on the site) |
-| `public-sans-var.woff2` | Public Sans normal | 400–600 | 19,536 B | printable Latin-1, General Punctuation, arrows |
+| `public-sans-var.woff2` | Public Sans normal | 400 to 600 | 19,536 B | printable Latin-1, General Punctuation, arrows |
 | `ibm-plex-mono-400.woff2` | IBM Plex Mono normal | 400 | 12,092 B | printable Latin-1, General Punctuation, arrows |
 | `ibm-plex-mono-500.woff2` | IBM Plex Mono normal | 500 | 12,292 B | printable Latin-1, General Punctuation, arrows |
 
