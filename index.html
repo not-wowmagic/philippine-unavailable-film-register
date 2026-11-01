@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Unseen, Philippine Film Status Register</title>
+  <meta name="description" content="A sourced status register for hard-to-find Philippine films, plus a separate index screened against digital catalogs.">
+  <meta name="theme-color" content="#1b1814">
+  <meta property="og:title" content="The Unseen, Philippine Film Status Register">
+  <meta property="og:description" content="A sourced register of hard-to-find Philippine films, plus a separate index screened against digital catalogs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-normal-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic-unseen.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the register</a>
+
+  <header class="masthead">
+    <div class="wrap masthead__top">
+      <a class="brand" href="#main" aria-label="The Unseen, home">
+        <span class="brand__mark" aria-hidden="true">§</span>
+        <span class="brand__text">The Unseen</span>
+      </a>
+      <div class="dataset-ticket" aria-label="Dataset status">
+        <span class="dataset-ticket__label">Last checked</span>
+        <strong id="dataset-date">…</strong>
+        <span class="dataset-ticket__rule" aria-hidden="true"></span>
+        <span><strong id="entry-count">…</strong> entries</span>
+      </div>
+    </div>
+
+    <div class="wrap masthead__hero">
+      <p class="eyebrow">Philippine film register</p>
+      <h1>The <em>Unseen</em></h1>
+      <p class="deck">A status register for Philippine films that cannot currently be watched, and for the few that have been found.</p>
+      <nav class="hero-index" aria-label="Page sections">
+        <a href="#main"><span>01</span> Register</a>
+        <a href="#taxonomy"><span>02</span> Statuses</a>
+        <a href="#changelog"><span>03</span> Changelog</a>
+        <a href="#unverified-index" data-open-index aria-controls="unverified-index" aria-expanded="false"><span>04</span> Hard to find</a>
+      </nav>
+    </div>
+
+    <div class="wrap">
+      <div id="stats" class="stats" aria-label="Register summary">
+        <div class="stat"><span class="stat__num">…</span><span class="stat__label">Loading</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="register wrap" aria-labelledby="results-heading">
+      <aside class="filters" aria-label="Filter the register">
+        <div class="filters__head">
+          <h2>Filter</h2>
+          <button id="clear-filters" class="text-button" type="button">Reset</button>
+        </div>
+
+        <button id="coverage-open" class="coverage-button" type="button" data-open-index aria-controls="unverified-index" aria-expanded="false">
+          <span class="coverage-button__label">Open hard-to-find index</span>
+          <span class="coverage-button__num" id="coverage-open-count">…</span>
+          <span class="coverage-button__arrow" aria-hidden="true">↓</span>
+        </button>
+
+        <div class="search-field">
+          <label for="search">Search title or director</label>
+          <div class="search-field__input">
+            <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="M12.7 12.7 17 17"></path></svg>
+            <input id="search" type="search" placeholder="e.g. Brocka, 1989" autocomplete="off" spellcheck="false">
+          </div>
+          <span id="search-count" class="search-count"></span>
+        </div>
+
+        <div id="filter-groups" class="filter-groups"></div>
+
+        <div class="toggle-group">
+          <p class="filter-label">Quick filters</p>
+          <label class="toggle">
+            <input type="checkbox" data-toggle="quote">
+            <span>Has a quotable reason</span>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" data-toggle="noCopy">
+            <span>No known copy</span>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" data-toggle="recent">
+            <span>Recently checked <small>within 30 days</small></span>
+          </label>
+        </div>
+      </aside>
+
+      <div class="results">
+        <div class="results__bar">
+          <div class="results__title">
+            <h2 id="results-heading">Records</h2>
+          </div>
+          <div class="results__tools">
+            <p id="results-summary" class="results__summary" aria-live="polite">Loading the register…</p>
+            <label class="sort-field" for="sort">Sort
+              <select id="sort">
+                <option value="year-desc">Year, newest first</option>
+                <option value="year-asc">Year, oldest first</option>
+                <option value="title">Title, A to Z</option>
+                <option value="checked">Recently checked</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div id="cards" class="cards" aria-busy="true"></div>
+
+        <div id="empty" class="empty" hidden>
+          <h3>No records match those filters.</h3>
+          <p>Try removing a filter or using a shorter title.</p>
+          <button id="empty-reset" class="button" type="button">Clear all filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="unverified-index" class="unverified" aria-labelledby="unverified-heading" hidden>
+      <div class="wrap">
+        <div class="section-head unverified__head">
+          <div class="unverified__head-copy">
+            <h2 id="unverified-heading">Hard-to-find index</h2>
+            <p class="section-deck">These titles come from Wikidata, and no active digital offer was found in the checked catalog. They are titles, not status records.</p>
+          </div>
+          <button id="index-close" class="text-button" type="button">Close</button>
+        </div>
+
+        <div class="unverified__toolbar">
+          <div class="unverified__search">
+            <label for="unverified-search">Search titles</label>
+            <input id="unverified-search" type="search" placeholder="Title or year…" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="unverified__meta">
+            <p id="unverified-count" class="unverified__count" aria-live="polite">Loading the hard-to-find index…</p>
+            <button id="unverified-all" class="button unverified__all" type="button" aria-pressed="false" aria-controls="unverified-rows">Show all titles</button>
+          </div>
+        </div>
+
+        <div class="unverified__table-wrap">
+          <table class="unverified__table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Year</th>
+                <th scope="col">Source</th>
+              </tr>
+            </thead>
+            <tbody id="unverified-rows">
+              <tr><td colspan="4" class="unverified__empty">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="unverified-pager" class="unverified__pager">
+          <button id="unverified-prev" class="text-button" type="button" disabled>Previous</button>
+          <span id="unverified-page" class="unverified__page"></span>
+          <button id="unverified-next" class="text-button" type="button" disabled>Next</button>
+        </div>
+
+        <p class="unverified__note">Wikidata, retrieved <span id="unverified-retrieved">1 November 2026</span>. Availability checked against JustWatch Philippines on <span id="unverified-checked">1 November 2026</span>. <span id="unverified-removed-note">…</span> titles with an active offer were removed. <span id="unverified-unchecked-note">…</span> had no exact match and are marked unchecked. No title here is claimed lost, banned or unavailable.</p>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="wrap notice">
+        <strong>JavaScript is required.</strong>
+        Serve this folder over HTTP.
+      </div>
+    </noscript>
+
+    <section id="taxonomy" class="taxonomy" aria-labelledby="taxonomy-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="taxonomy-heading">Status definitions</h2>
+        </div>
+
+        <div class="taxonomy__grid">
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--banned" aria-hidden="true"></span>banned</h3>
+            <p>regulator or court blocked exhibition. Needs a quotable decision, or a report quoting one.</p>
+          </article>
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--withdrawn" aria-hidden="true"></span>withdrawn</h3>
+            <p>accepted or scheduled, then pulled before public screening. Needs a dated report.</p>
+          </article>
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--unreleased" aria-hidden="true"></span>unreleased</h3>
+            <p>finished or partly finished, never publicly exhibited.</p>
+          </article>
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--unavailable" aria-hidden="true"></span>unavailable</h3>
+            <p>screened at least once publicly, but no current legal way to watch it. Needs a documented screening and an empty availability search.</p>
+          </article>
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--lost" aria-hidden="true"></span>lost</h3>
+            <p>no known copy in any archive, studio or private collection. Needs an archive or historian statement, not "I can't find it".</p>
+          </article>
+          <article class="taxonomy__item">
+            <h3><span class="status-dot status-dot--found" aria-hidden="true"></span>found / partially_found</h3>
+            <p>a copy has been located. Record where and when.</p>
+          </article>
+        </div>
+
+        <div class="taxonomy__lower">
+          <div class="cause-box">
+            <p class="filter-label">Cause, for unavailable records</p>
+            <p class="cause-line"><code>never_distributed</code> <span aria-hidden="true">|</span> <code>distribution_ended</code> <span aria-hidden="true">|</span> <code>rights_unclear</code> <span aria-hidden="true">|</span> <code>archive_only</code> <span aria-hidden="true">|</span> <code>no_known_rights_holder</code></p>
+          </div>
+          <div class="confidence-box">
+            <p class="filter-label">Confidence</p>
+            <p><strong>Confirmed</strong> means a primary source, archive or regulator. <strong>Reported</strong> means news. <strong>Unverified</strong> means a forum or rumour.</p>
+          </div>
+        </div>
+
+        <div class="callouts">
+          <div class="callout">
+            <p class="callout__label">The lost rule</p>
+            <p>Never use "lost" for a film that merely has no streaming link. That is the most common error and it destroys credibility. "Unavailable" is the honest status for a film that screened but has no legal access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="changelog" class="changelog" aria-labelledby="changelog-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="changelog-heading">Status changelog</h2>
+          <p class="section-deck">These are recorded changes, with the evidence that prompted them.</p>
+        </div>
+        <div id="changelog-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="wrap about__grid">
+        <div class="section-head">
+          <h2 id="about-heading">About this register</h2>
+        </div>
+        <div class="about__body">
+          <p class="lede">The Unseen is an independent reference work. It is not affiliated with any studio, archive, festival or regulator.</p>
+          <p>It covers Philippine films, especially shorts and festival titles, with no current legal access. A few resolved cases stay because the register tracks how films come back, through a print found in an archive or a legal edition released years after a ban.</p>
+          <p>Each record starts with a documented screening, production or regulatory fact. Availability is checked against legal streaming, VOD, home video and archive catalogues, and the check date is recorded.</p>
+          <p>The 8,000+ figure is an archive estimate for films shot on film stock from 1919 to 2012. It is not a title list. The hard-to-find index starts from 2,034 Wikidata titles, screened against <a href="https://www.justwatch.com/ph/" target="_blank" rel="noopener noreferrer">JustWatch Philippines</a> on 1 November 2026. The corpus estimate comes from <a href="https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge" target="_blank" rel="noopener noreferrer">The Philippine Star, 17 August 2026</a>, citing Leo Katigbak of ABS-CBN Film Archives.</p>
+          <p class="small">This is desk research, not an archive visit. Catalogues and region locks change, so a negative finding is not proof that no copy exists. No unauthorized full-film links are included. Corrections should add a source and update the changelog.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand"><span class="brand__mark" aria-hidden="true">§</span> The Unseen</div>
+    </div>
+  </footer>
+
+  <dialog id="detail" class="detail" aria-labelledby="detail-title">
+    <div class="detail__bar">
+      <span id="detail-index" class="detail__index">Record</span>
+      <div class="detail__actions">
+        <button id="copy-link" class="button button--ghost" type="button">Copy link</button>
+        <button id="close-detail" class="button button--ghost" type="button" aria-label="Close record">Close</button>
+      </div>
+    </div>
+    <div id="detail-body" class="detail__scroll"></div>
+  </dialog>
+
+  <script src="app.js?v=21" defer></script>
+</body>
+</html>

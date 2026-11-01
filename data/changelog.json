@@ -1,0 +1,216 @@
+[
+  {
+    "date": "2026-10-31",
+    "filmId": "live-show",
+    "title": "Live Show",
+    "from": "banned",
+    "to": "found",
+    "note": "A legal uncut version appears for rent and purchase on Amazon US. The 2001 Philippine theatrical ban remains on record; this is a change in access, not a lifting of the ban.",
+    "source": {
+      "publisher": "Amazon Prime Video",
+      "url": "https://www.amazon.com/Live-Show-Uncut-Javier-Reyes/dp/B0FVCPXHKR"
+    }
+  },
+  {
+    "date": "2026-10-31",
+    "filmId": "paglaki-ko-gusto-kong-maging-pornstar",
+    "title": "Paglaki Ko, Gusto Kong Maging Pornstar",
+    "from": "banned",
+    "to": "found",
+    "note": "Prime Video lists a legal rental edition in the Philippines. The MTRCB X rating for cinemas remains on record.",
+    "source": {
+      "publisher": "Prime Video",
+      "url": "https://www.primevideo.com/detail/0TYNEOXS77Z1M9OC3G6ALULRAC/"
+    }
+  },
+  {
+    "date": "2025-03-12",
+    "filmId": "food-delivery-2025",
+    "title": "Food Delivery, Fresh from the West Philippine Sea",
+    "from": null,
+    "fromLabel": "Scheduled",
+    "to": "withdrawn",
+    "note": "The documentary is pulled from CinePanalo two days before its gala premiere; the filmmakers say external factors played a role.",
+    "source": {
+      "publisher": "Philstar Life",
+      "url": "https://philstarlife.com/geeky/848540-west-philippine-sea-documentary-withdraws-2025-cinepanalo-film-festival"
+    }
+  },
+  {
+    "date": "2024-09-06",
+    "filmId": "dear-satan-2024",
+    "title": "Dear Satan",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The MTRCB upholds its final X rating, even after the film is retitled Dear Santa.",
+    "source": {
+      "publisher": "PEP.ph",
+      "url": "https://www.pep.ph/news/local/mtrcb-x-rating-dear-satan-final-a718-20240906"
+    }
+  },
+  {
+    "date": "2019-11-07",
+    "filmId": "metamorphosis-2019",
+    "title": "Metamorphosis",
+    "from": "banned",
+    "to": "unavailable",
+    "note": "The MTRCB reclassifies the film from X to R-16 without cuts. It screens at Cinema One Originals and later streams on iWant; that stream has ended.",
+    "source": {
+      "publisher": "ABS-CBN News",
+      "url": "https://www.abs-cbn.com/2019/11/7/fresh-scoops/cinema-one-originals-entry-metamorphosis-reclass-39769"
+    }
+  },
+  {
+    "date": "2010-03-25",
+    "filmId": "ganito-tayo-ngayon",
+    "title": "Ganito Tayo Noon, Paano na Tayo Bukas?",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The MTRCB rates the short X for cinemas; it is later allowed on ANC and screened at the CCP gala.",
+    "source": {
+      "publisher": "PEP.ph",
+      "url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated"
+    }
+  },
+  {
+    "date": "2010-03-25",
+    "filmId": "ayos-ka",
+    "title": "Ayos Ka?",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The MTRCB rates Brillante Mendoza's music video X for being injurious to the prestige of the Republic.",
+    "source": {
+      "publisher": "PEP.ph",
+      "url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated"
+    }
+  },
+  {
+    "date": "2005",
+    "filmId": "darna-1951",
+    "title": "Darna",
+    "from": "lost",
+    "to": "partially_found",
+    "note": "Howie Severino and i-Witness find a 40-minute, silent, incomplete copy in Thailand. The original film remains incomplete.",
+    "source": {
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Darna_(1951_film)"
+    }
+  },
+  {
+    "date": "2008-12-01",
+    "filmId": "ang-mabuhay-para-sa-masa",
+    "title": "Ang Mabuhay para sa Masa",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The Court of Appeals affirms the MTRCB and Office of the President ban on Estrada's biographical documentary.",
+    "source": {
+      "publisher": "GMA News Online",
+      "url": "https://www.gmanetwork.com/news/topstories/nation/136781/erap-bioflick-subject-to-mtrcb-review-ca-rules/story/"
+    }
+  },
+  {
+    "date": "1999-09-27",
+    "filmId": "butakal-sugapa-sa-laman",
+    "title": "Butakal: Sugapa sa Laman",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The MTRCB orders the film recalled before its scheduled release after the Chiong family objects; the Supreme Court later orders the master copy returned.",
+    "source": {
+      "publisher": "Lawphil / Supreme Court of the Philippines",
+      "url": "https://lawphil.net/judjuris/juri2007/dec2007/gr_161422_2007.html"
+    }
+  },
+  {
+    "date": "1965-09-03",
+    "filmId": "iginuhit-ng-tadhana",
+    "title": "Iginuhit ng Tadhana",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The Board of Censors suspends the release; the suspension is temporary and the film later resumes its theatrical run.",
+    "source": {
+      "publisher": "Video 48",
+      "url": "https://video48.blogspot.com/2008/05/september-3-1965-movie-on-marcos.html"
+    }
+  },
+  {
+    "date": "2025-11-01",
+    "filmId": "diwata-ng-karagatan",
+    "title": "Diwata ng Karagatan",
+    "from": "lost",
+    "to": "found",
+    "note": "CINEMATEK identifies a 35mm print catalogued as Ligaya, fille des îles. It is the only known surviving copy, and it is a shortened French-language version.",
+    "source": {
+      "publisher": "CINEMATEK",
+      "url": "https://cinematek.be/en/dossiers/2025/rediscovery-of-lost-filipino-classic-film-in-the-cinematek-archive"
+    }
+  },
+  {
+    "date": "2024-11-09",
+    "filmId": "lost-sabungeros",
+    "title": "Lost Sabungeros",
+    "from": "withdrawn",
+    "to": "unavailable",
+    "note": "After Cinemalaya cancels its premiere, the film screens at QCinema. It remains unrated and without streaming or commercial distribution.",
+    "source": {
+      "publisher": "GMA Network",
+      "url": "https://www.gmanetwork.com/entertainment/photos/lost-sabungeros-finally-shown-to-public-via-qcinema-international-film-festival/21995/"
+    }
+  },
+  {
+    "date": "2024-09-05",
+    "filmId": "alipato-at-muog",
+    "title": "Alipato at Muog",
+    "from": "banned",
+    "to": "unavailable",
+    "note": "The MTRCB reclassifies the film from X to R-16 after an appeal. The ban is lifted, but no streaming or commercial release follows.",
+    "source": {
+      "publisher": "GMA News Online",
+      "url": "https://www.gmanetwork.com/news/showbiz/chikaminute/919453/alipato-at-muog-reclassified-to-r-16-following-second-review-of-mtrcb/story/"
+    }
+  },
+  {
+    "date": "2024-08-22",
+    "filmId": "alipato-at-muog",
+    "title": "Alipato at Muog",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "The MTRCB's first review committee refuses public exhibition, citing the film's tendency to undermine faith and confidence in government.",
+    "source": {
+      "publisher": "PEP.ph",
+      "url": "https://www.pep.ph/pepalerts/pep-troika/182505/alipato-at-muog-rated-x-mtrcb-a4118-20240823-lfrm"
+    }
+  },
+  {
+    "date": "2024-08-04",
+    "filmId": "lost-sabungeros",
+    "title": "Lost Sabungeros",
+    "from": null,
+    "fromLabel": "Scheduled",
+    "to": "withdrawn",
+    "note": "Cinemalaya cancels the 8 to 9 August screenings four days before the premiere, citing security concerns.",
+    "source": {
+      "publisher": "The Philippine Star",
+      "url": "https://www.philstar.com/entertainment/2024/08/04/2375389/gma-docu-lost-sabungeros-cinemalaya-premiere-canceled"
+    }
+  },
+  {
+    "date": "2001-04-03",
+    "filmId": "live-show",
+    "title": "Live Show",
+    "from": null,
+    "fromLabel": "None",
+    "to": "banned",
+    "note": "A Malacañang appeals committee orders the permanent ban and revokes the MTRCB permit for public exhibition.",
+    "source": {
+      "publisher": "The Philippine Star",
+      "url": "https://www.philstar.com/news-feature/91980/live-show-now-dead-show"
+    }
+  }
+]

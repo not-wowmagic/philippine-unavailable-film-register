@@ -1,0 +1,12 @@
+# Keep text files LF in the repository and on Linux build machines.
+* text=auto eol=lf
+
+# Binary assets
+*.woff2 binary
+*.woff binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary

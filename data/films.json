@@ -1,0 +1,1669 @@
+[
+  {
+    "id": "food-delivery-2025",
+    "title": "Food Delivery, Fresh from the West Philippine Sea",
+    "original_title": null,
+    "year": 2025,
+    "type": "documentary",
+    "director": "Baby Ruth Villarama",
+    "runtime_min": null,
+    "festivals": [
+      {
+        "festival": "CinePanalo",
+        "year": 2025,
+        "section": null
+      }
+    ],
+    "status": "withdrawn",
+    "cause": null,
+    "status_detail": "Pulled from the CinePanalo Film Festival two days before its gala premiere; alternative screenings were promised.",
+    "quoted_reason": {
+      "text": "We regret to confirm that Food Delivery, Fresh from the West Philippine Sea has been pulled out from the CinePanalo Festival.",
+      "attributed_to": "Baby Ruth Villarama and Chris Cahilig, joint statement via Philstar Life",
+      "source_url": "https://philstarlife.com/geeky/848540-west-philippine-sea-documentary-withdraws-2025-cinepanalo-film-festival"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "Baby Ruth Villarama",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://philstarlife.com/geeky/848540-west-philippine-sea-documentary-withdraws-2025-cinepanalo-film-festival",
+        "publisher": "Philstar Life",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Food_Delivery_(film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.rappler.com/entertainment/movies/directors-guild-calls-out-puregold-cinepanalo-pullout-west-ph-sea-docu/",
+        "publisher": "Rappler",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.abs-cbn.com/entertainment/showbiz/movies-series/2025/3/22/directors-guild-says-removal-of-wps-docu-from-cinepanalo-disturbing-1821",
+        "publisher": "ABS-CBN News",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The withdrawal was announced on 12 March 2025, two days before the festival. The filmmakers said external factors played a role. No public screening or legal streaming copy was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "walk-with-jesus",
+    "title": "Walk With Jesus",
+    "original_title": null,
+    "year": 2025,
+    "type": "short",
+    "director": "Redh Honoridez",
+    "runtime_min": null,
+    "festivals": [
+      {
+        "festival": "Sinag Maynila",
+        "year": 2025,
+        "section": "Short Film Competition"
+      }
+    ],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "The MTRCB gave the completed short an X rating before its Sinag Maynila screening; it was pulled from the festival.",
+    "quoted_reason": {
+      "text": "risks offending the deeply held religious convictions of the Filipino people.",
+      "attributed_to": "Movie and Television Review and Classification Board (MTRCB), as quoted by PEP.ph",
+      "source_url": "https://www.pep.ph/pepalerts/pep-troika/188708/walk-with-jesus-rated-x-mtrcb-a4118-20250918-lfrm"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "Hound Film Production / Hagdanan Productions",
+      "format": "digital master",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/pepalerts/pep-troika/188708/walk-with-jesus-rated-x-mtrcb-a4118-20250918-lfrm",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/the-freeman/cebu-entertainment/2025/09/19/2473913/bisaya-satirical-short-walk-jesus-gets-x-rating",
+        "publisher": "The Philippine Star / The Freeman",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt38891457/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The X rating means the film is not suitable for public viewing. No public screening was found. Availability checked 31 Oct 2026: no legal streaming, VOD or archive access located. The production companies are named in the PEP report; a completed copy was submitted for classification.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "alipato-at-muog",
+    "title": "Alipato at Muog",
+    "original_title": null,
+    "year": 2024,
+    "type": "documentary",
+    "director": "JL Burgos",
+    "runtime_min": 96,
+    "festivals": [
+      {
+        "festival": "Cinemalaya",
+        "year": 2024,
+        "section": "Documentary"
+      }
+    ],
+    "status": "unavailable",
+    "cause": "never_distributed",
+    "status_detail": "Premiered at Cinemalaya 2024; an initial X rating was reduced to R-16 on appeal. No legal streaming, VOD or archive access was found.",
+    "quoted_reason": {
+      "text": "The film tends to undermine the faith and confidence of the people in their government and/or duly-constituted authorities.",
+      "attributed_to": "MTRCB first review committee, as quoted by director JL Burgos in PEP.ph",
+      "source_url": "https://www.pep.ph/pepalerts/pep-troika/182505/alipato-at-muog-rated-x-mtrcb-a4118-20240823-lfrm"
+    },
+    "last_verified_screening": {
+      "date": "2024-08-06",
+      "venue": "Cinema 2, Ayala Malls Manila Bay, Quezon City",
+      "source_url": "https://www.pep.ph/pepalerts/pep-troika/182505/alipato-at-muog-rated-x-mtrcb-a4118-20240823-lfrm"
+    },
+    "known_copy": {
+      "holder": "Pulang Langgam Media Productions / GMA Pictures",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/pepalerts/pep-troika/182505/alipato-at-muog-rated-x-mtrcb-a4118-20240823-lfrm",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.gmanetwork.com/news/showbiz/chikaminute/919453/alipato-at-muog-reclassified-to-r-16-following-second-review-of-mtrcb/story/",
+        "publisher": "GMA News Online",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.cinemalaya.org/alipato-at-muog/",
+        "publisher": "Cinemalaya",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Alipato_at_Muog",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt33059480/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The X rating was reversed on 5 Sept 2024; the record is therefore unavailable rather than banned. It screened at Cinemalaya; no streaming release followed. Availability checked 31 Oct 2026 against JustWatch, MUBI, Amazon and YouTube; only trailers were found.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "dear-satan-2024",
+    "title": "Dear Satan",
+    "original_title": null,
+    "year": 2024,
+    "type": "feature",
+    "director": "RC Delos Reyes",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "MTRCB upheld a final X rating, barring commercial theatrical release; no legal copy was found.",
+    "quoted_reason": {
+      "text": "The Movie and Television Review and Classification Board (MTRCB) on Thursday upheld its final decision to ban the film “Dear Santa,” originally titled “Dear Satan,” citing the film’s portrayal of “Satan” in a positive light as an attack on fundamental belief of the Catholic and Christian faiths.",
+      "attributed_to": "MTRCB, as reported by PEP.ph",
+      "source_url": "https://www.pep.ph/news/local/mtrcb-x-rating-dear-satan-final-a718-20240906"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "MAVX Productions",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/news/local/mtrcb-x-rating-dear-satan-final-a718-20240906",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dear_Satan",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://mb.com.ph/2024/09/06/mtrcb-affirms-x-rating-on-dear-satan",
+        "publisher": "Manila Bulletin",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.rappler.com/entertainment/movies/mtrcb-upholds-dear-satan-x-rating/",
+        "publisher": "Rappler",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The film was renamed Dear Santa, but the MTRCB upheld the X rating. No legal streaming or theatrical release was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "kono-basho-2024",
+    "title": "Kono Basho",
+    "original_title": null,
+    "year": 2024,
+    "type": "feature",
+    "director": "Jaime Pacena II",
+    "runtime_min": 85,
+    "festivals": [
+      {
+        "festival": "Cinemalaya",
+        "year": 2024,
+        "section": null
+      }
+    ],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "Screened at Cinemalaya 2024; no legal streaming, VOD or archive access was found.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2024-08-03",
+      "venue": "Cinemalaya 2024, Manila",
+      "source_url": "https://www.imdb.com/title/tt28717441/"
+    },
+    "known_copy": {
+      "holder": "Project 8 Projects / Mentorque Productions",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.cinemalaya.org/kono-basho/",
+        "publisher": "Cinemalaya",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt28717441/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://japanesefilmfestph.jfmo.org.ph/film-lineup/kono-basho/",
+        "publisher": "Japanese Film Festival Philippines",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Cinemalaya lists 85 minutes; IMDb lists an August 3, 2024 Philippine release. No legal streaming listing was found as of 31 Oct 2026. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "lost-sabungeros",
+    "title": "Lost Sabungeros",
+    "original_title": null,
+    "year": 2024,
+    "type": "documentary",
+    "director": "Bryan Brazil",
+    "runtime_min": null,
+    "festivals": [
+      {
+        "festival": "Cinemalaya",
+        "year": 2024,
+        "section": null
+      },
+      {
+        "festival": "QCinema",
+        "year": 2024,
+        "section": null
+      }
+    ],
+    "status": "unavailable",
+    "cause": "never_distributed",
+    "status_detail": "Pulled from Cinemalaya 2024 over 'security concerns', later screened at QCinema and on a 2026 campus tour; unrated and without streaming.",
+    "quoted_reason": {
+      "text": "The MTRCB clarifies that the film “Lost Sabungeros” was not rejected nor denied review.",
+      "attributed_to": "Movie and Television Review and Classification Board (MTRCB)",
+      "source_url": "https://www.dzrh.com.ph/post/mtrcb-clarifies-lost-sabungeros-film-review-still-pending-not-rejected"
+    },
+    "last_verified_screening": {
+      "date": "2026-04-24",
+      "venue": "MPH, Building C, University of Batangas, Lipa",
+      "source_url": "https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/985056/lost-sabungeros-the-complete-story-to-be-screened-at-university-of-batangas-on-april-24/story/"
+    },
+    "known_copy": {
+      "holder": "GMA Pictures / GMA Public Affairs",
+      "format": "digital",
+      "access": "not public; campus screenings by arrangement"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.philstar.com/entertainment/2024/08/04/2375389/gma-docu-lost-sabungeros-cinemalaya-premiere-canceled",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.gmanetwork.com/entertainment/photos/lost-sabungeros-finally-shown-to-public-via-qcinema-international-film-festival/21995/",
+        "publisher": "GMA Network",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://qcinema.ph/event/lost-sabungeros/",
+        "publisher": "QCinema International Film Festival",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/985056/lost-sabungeros-the-complete-story-to-be-screened-at-university-of-batangas-on-april-24/story/",
+        "publisher": "GMA News Online",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.dzrh.com.ph/post/mtrcb-clarifies-lost-sabungeros-film-review-still-pending-not-rejected",
+        "publisher": "DZRH News",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/981159/lost-sabungeros-the-complete-story-to-be-screened-at-ue-pup-this-march/story/",
+        "publisher": "GMA News Online",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Lost_Sabungeros",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "Cinemalaya cancelled the 8-9 Aug 2024 screenings four days before the premiere. The film premiered at QCinema on 9 Nov 2024. MTRCB review remained pending in March 2026; no streaming release was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "the-hearing-2024",
+    "title": "The Hearing",
+    "original_title": null,
+    "year": 2024,
+    "type": "feature",
+    "director": "Lawrence Fajardo",
+    "runtime_min": 100,
+    "festivals": [
+      {
+        "festival": "Cinemalaya",
+        "year": 2024,
+        "section": null
+      }
+    ],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "Screened at Cinemalaya 2024; no legal streaming, VOD or archive access was found.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2024-08-02",
+      "venue": "Cinemalaya 2024, Manila",
+      "source_url": "https://en.wikipedia.org/wiki/The_Hearing_(film)"
+    },
+    "known_copy": {
+      "holder": "Center Stage Productions / Pelikulaw",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Hearing_(film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.cinemalaya.org/the-hearing/",
+        "publisher": "Cinemalaya",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt33059950/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Cinemalaya lists 100 minutes and an R-13 rating. No legal streaming listing was found as of 31 Oct 2026. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "under-a-piaya-moon-2024",
+    "title": "Under a Piaya Moon",
+    "original_title": null,
+    "year": 2024,
+    "type": "feature",
+    "director": "Kurt Soberano",
+    "runtime_min": 111,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "Released in Philippine cinemas in March 2024; no legal streaming or VOD was found.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2024-03-15",
+      "venue": "Philippine cinemas (venue not specified)",
+      "source_url": "https://www.reely.space/movies/1251341"
+    },
+    "known_copy": {
+      "holder": "Production (holder not confirmed)",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.reely.space/movies/1251341",
+        "publisher": "Reely",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.themoviedb.org/movie/1251341-under-a-piaya-moon",
+        "publisher": "TMDB",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Reely and TMDB list a 15 March 2024 release and a 111-minute runtime. No legal streaming listing was found as of 31 Oct 2026. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "paglaki-ko-gusto-kong-maging-pornstar",
+    "title": "Paglaki Ko, Gusto Kong Maging Pornstar",
+    "original_title": null,
+    "year": 2021,
+    "type": "feature",
+    "director": "Darryl Yap",
+    "runtime_min": 91,
+    "festivals": [],
+    "status": "found",
+    "cause": null,
+    "status_detail": "MTRCB rated it X in 2021, but the film premiered on Vivamax and is now legally rentable on Prime Video.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2021-01-29",
+      "venue": "Vivamax (online premiere)",
+      "source_url": "https://en.wikipedia.org/wiki/Paglaki_Ko,_Gusto_Kong_Maging_Pornstar"
+    },
+    "known_copy": {
+      "holder": "Viva Films / Vivamax",
+      "format": "digital",
+      "access": "rent/buy on Prime Video (Philippines)"
+    },
+    "where_to_watch": [
+      {
+        "platform": "Prime Video — rent/buy",
+        "url": "https://www.primevideo.com/detail/0TYNEOXS77Z1M9OC3G6ALULRAC/",
+        "note": "The Prime Video listing offers HD rental and purchase."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Paglaki_Ko,_Gusto_Kong_Maging_Pornstar",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.justwatch.com/ph/movie/paglaki-ko-gusto-kong-maging-pornstar",
+        "publisher": "JustWatch",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.primevideo.com/detail/0TYNEOXS77Z1M9OC3G6ALULRAC/",
+        "publisher": "Prime Video",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "The MTRCB X rating barred theatrical exhibition. The film was released on Vivamax and is legally rentable on Prime Video in the Philippines as of 31 Oct 2026. This is a change in access, not a court reversal of the X rating.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "metamorphosis-2019",
+    "title": "Metamorphosis",
+    "original_title": null,
+    "year": 2019,
+    "type": "feature",
+    "director": "J.E. Tiglao",
+    "runtime_min": 98,
+    "festivals": [
+      {
+        "festival": "Cinema One Originals",
+        "year": 2019,
+        "section": null
+      }
+    ],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "MTRCB initially rated it X, then reclassified it R-16; it screened at Cinema One Originals and was later available on iWant.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2019-11",
+      "venue": "Cinema One Originals, Manila",
+      "source_url": "https://www.abs-cbn.com/2019/11/7/fresh-scoops/cinema-one-originals-entry-metamorphosis-reclass-39769"
+    },
+    "known_copy": {
+      "holder": "Cinema One / ABS-CBN",
+      "format": "digital",
+      "access": "former iWant stream ended"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.abs-cbn.com/2019/11/7/fresh-scoops/cinema-one-originals-entry-metamorphosis-reclass-39769",
+        "publisher": "ABS-CBN News",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://entertainment.inquirer.net/350711/mtrcb-gives-metamorphosis-x-rating",
+        "publisher": "Inquirer Entertainment",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.justwatch.com/ph/movie/metamorphosis-2019-0",
+        "publisher": "JustWatch",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.pep.ph/news/local/147402/x-rated-film-about-intersex-people-reclassified-by-mtrcb-a2670-20191108",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://queereast.org.uk/programme/metamorphosis/",
+        "publisher": "Queer East",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "JustWatch PH says the film was last available on iWant and is unavailable to stream in the Philippines as of 31 Oct 2026. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "dota-nakakabaliw",
+    "title": "DOTA: Nakakabaliw",
+    "original_title": null,
+    "year": 2014,
+    "type": "feature",
+    "director": "Dyzal M. Damun",
+    "runtime_min": 85,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "Released theatrically in 2014; no legal streaming or VOD was found, and only a trailer was located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2014-04-09",
+      "venue": "Philippine cinemas (venue not specified)",
+      "source_url": "https://www.clickthecity.com/movies/title/0zM5Hq/dota-nakakabaliw"
+    },
+    "known_copy": {
+      "holder": "Manchester Films",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.clickthecity.com/movies/title/0zM5Hq/dota-nakakabaliw",
+        "publisher": "ClickTheCity",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt3657530/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://letterboxd.com/film/dota-nakakabaliw/",
+        "publisher": "Letterboxd",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The ClickTheCity listing gives a 9 April 2014 release, a PG rating and an 85-minute runtime. Availability checked 31 Oct 2026 against JustWatch, MUBI, Amazon and YouTube; no legal full copy was found. A trailer is not a copy.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "ayos-ka",
+    "title": "Ayos Ka?",
+    "original_title": null,
+    "year": 2010,
+    "type": "short",
+    "director": "Brillante Mendoza",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "MTRCB X-rated the music video for being 'injurious to the prestige of the Republic'; no current legal copy was found.",
+    "quoted_reason": {
+      "text": "injurious to the prestige of the Republic of the Philippines and its people.",
+      "attributed_to": "MTRCB, as quoted in ANC's statement via PEP.ph",
+      "source_url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "ANC / ABS-CBN",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_films_banned_in_the_Philippines",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The music video had already appeared on YouTube and Facebook before the MTRCB X rating. It was part of ANC's AmBisyon 2010 project; no current legal copy was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "ganito-tayo-ngayon",
+    "title": "Ganito Tayo Noon, Paano na Tayo Bukas?",
+    "original_title": null,
+    "year": 2010,
+    "type": "short",
+    "director": "Jeffrey Jeturian",
+    "runtime_min": 10,
+    "festivals": [],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "MTRCB X-rated the short for cinemas; it was screened at the CCP gala and allowed on ANC.",
+    "quoted_reason": {
+      "text": "undermining the faith and confidence of the people in government.",
+      "attributed_to": "MTRCB, as quoted in ANC's statement via PEP.ph",
+      "source_url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated"
+    },
+    "last_verified_screening": {
+      "date": "2010-04-06",
+      "venue": "Cultural Center of the Philippines, Pasay",
+      "source_url": "https://www.pep.ph/lifestyle/21796/direk-jeffrey-jeturians-x-rated-short-film-is-allowed-on-anc-but-not-on-the--big-screen"
+    },
+    "known_copy": {
+      "holder": "ANC / ABS-CBN",
+      "format": "digital",
+      "access": "not public; aired on ANC in 2010"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/news/local/33550/short-films-of-brillante-mendoza-and-jeffrey-jeturian-are-x-rated",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.pep.ph/lifestyle/21796/direk-jeffrey-jeturians-x-rated-short-film-is-allowed-on-anc-but-not-on-the--big-screen",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_films_banned_in_the_Philippines",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The MTRCB X-rated the short on 25 March 2010. ANC appealed; the film was allowed on ANC but banned from cinemas. It screened at the CCP gala on 6 April 2010. No current legal streaming copy was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "aurora-2009",
+    "title": "Aurora",
+    "original_title": null,
+    "year": 2009,
+    "type": "feature",
+    "director": "Adolfo Alix Jr.",
+    "runtime_min": 85,
+    "festivals": [
+      {
+        "festival": "International Film Festival Rotterdam",
+        "year": 2010,
+        "section": null
+      }
+    ],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "Rated X twice by the MTRCB over its rape scene; it premiered at UP Cine Adarna, where the rating did not apply, and has no legal streaming.",
+    "quoted_reason": {
+      "text": "unfit for public viewing",
+      "attributed_to": "MTRCB review committee, as quoted by PEP.ph",
+      "source_url": "https://www.pep.ph/news/local/3251/adolf-alix-jr-shows-two-sides-of-muslims-in-aurora"
+    },
+    "last_verified_screening": {
+      "date": "2009-01-19",
+      "venue": "Cine Adarna, University of the Philippines Diliman, Quezon City",
+      "source_url": "https://www.pep.ph/news/local/3251/adolf-alix-jr-shows-two-sides-of-muslims-in-aurora"
+    },
+    "known_copy": {
+      "holder": "Bicycle Pictures",
+      "format": "digital",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.pep.ph/news/local/3251/adolf-alix-jr-shows-two-sides-of-muslims-in-aurora",
+        "publisher": "PEP.ph",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt1322270/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://mubi.com/en/us/films/aurora-2009",
+        "publisher": "MUBI",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://letterboxd.com/film/aurora-2009/",
+        "publisher": "Letterboxd",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The seed lists 2008; PEP, IMDb and MUBI date the film to 2009. The X rating was given twice. It screened at UP Cine Adarna on 19 Jan 2009 and at IFFR 2010. MUBI says it is not currently playing. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "ang-mabuhay-para-sa-masa",
+    "title": "Ang Mabuhay para sa Masa",
+    "original_title": "To Live for the Masses",
+    "year": 2006,
+    "type": "documentary",
+    "director": "No director credited",
+    "runtime_min": 57,
+    "festivals": [],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "MTRCB rated the documentary X in 2006; a conditional lifting was rejected by Estrada, and it was never publicly aired.",
+    "quoted_reason": {
+      "text": "libelous and contained false information.",
+      "attributed_to": "MTRCB, as reported by The Philippine Star",
+      "source_url": "https://www.philstar.com/headlines/2007/01/11/379390/mtrcb-lifts-ban-erap-bio-flick"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "Publikasia / Public Perception Management Asia",
+      "format": "digital, 57 minutes",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/To_Live_for_the_Masses",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/headlines/2007/01/11/379390/mtrcb-lifts-ban-erap-bio-flick",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.gmanetwork.com/news/topstories/nation/136781/erap-bioflick-subject-to-mtrcb-review-ca-rules/story/",
+        "publisher": "GMA News Online",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The Court of Appeals affirmed the MTRCB/Office of the President ban in 2008; a conditional lifting in 2007 was rejected. It was never publicly aired. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "mga-pusang-gala",
+    "title": "Mga Pusang Gala",
+    "original_title": "Stray Cats",
+    "year": 2005,
+    "type": "feature",
+    "director": "Ellen Ongkeko-Marfil",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "Screened in 2005 and streamed briefly by Cinema One in 2021; that stream has ended and no legal copy is currently offered.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "2021-06-24",
+      "venue": "Cinema One YouTube channel",
+      "source_url": "https://www.facebook.com/Cinema1channel/posts/-now-streaming-mga-pusang-gala-subscribe-and-stream-the-fullmovie-for-free-on-ci/5963048637040426/"
+    },
+    "known_copy": {
+      "holder": "Erasto Films",
+      "format": "digital",
+      "access": "not public; former Cinema One YouTube stream ended"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.facebook.com/Cinema1channel/posts/-now-streaming-mga-pusang-gala-subscribe-and-stream-the-fullmovie-for-free-on-ci/5963048637040426/",
+        "publisher": "Cinema One (Facebook)",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://letterboxd.com/film/mga-pusang-gala/",
+        "publisher": "Letterboxd",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0476359/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The seed title 'Pusang Gala' refers to Mga Pusang Gala, released internationally as Stray Cats. The Cinema One post advertised a free full-movie stream in June 2021; it is no longer available. Availability checked 31 Oct 2026 against JustWatch/Letterboxd, YouTube and Amazon; no legal full copy was found.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "live-show",
+    "title": "Live Show",
+    "original_title": "Toro",
+    "year": 2000,
+    "type": "feature",
+    "director": "Jose Javier Reyes",
+    "runtime_min": 107,
+    "festivals": [
+      {
+        "festival": "Berlinale",
+        "year": 2000,
+        "section": null
+      }
+    ],
+    "status": "found",
+    "cause": null,
+    "status_detail": "Permanently banned from Philippine theaters in 2001; a legal uncut version is now rentable on Amazon US.",
+    "quoted_reason": {
+      "text": "Premises considered, this committee hereby orders the permanent banning of the aforesaid movie and therefore revokes the permit issued by the MTRCB (Movie and Television Review and Classification Board) for its public exhibition.",
+      "attributed_to": "Renato Corona, Malacañang appeals committee, quoted by The Philippine Star",
+      "source_url": "https://www.philstar.com/news-feature/91980/live-show-now-dead-show"
+    },
+    "last_verified_screening": {
+      "date": "2001-03",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.philstar.com/news-feature/91980/live-show-now-dead-show"
+    },
+    "known_copy": {
+      "holder": "Regal Entertainment / Available Light Productions",
+      "format": "digital",
+      "access": "rent/buy on Amazon US"
+    },
+    "where_to_watch": [
+      {
+        "platform": "Amazon Prime Video (US) — rent/buy",
+        "url": "https://www.amazon.com/Live-Show-Uncut-Javier-Reyes/dp/B0FVCPXHKR",
+        "note": "US region. The 2001 permanent ban from Philippine theaters remains on record."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.philstar.com/news-feature/91980/live-show-now-dead-show",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.amazon.com/Live-Show-Uncut-Javier-Reyes/dp/B0FVCPXHKR",
+        "publisher": "Amazon Prime Video",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://news.bbc.co.uk/2/hi/asia-pacific/1234155.stm",
+        "publisher": "BBC News",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Live_Show_(film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "The film opened in Philippine theaters in the second week of March 2001 and was permanently banned on 3 April 2001. Amazon lists an uncut 1h47m version for rent/buy; this is a legal US VOD listing, not a lifting of the Philippine ban. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "butakal-sugapa-sa-laman",
+    "title": "Butakal: Sugapa sa Laman",
+    "original_title": null,
+    "year": 1999,
+    "type": "feature",
+    "director": "Federico \"Toto\" Natividad",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "banned",
+    "cause": null,
+    "status_detail": "MTRCB recalled the film before its scheduled 1999 release after the Chiong family objected; the Supreme Court later ordered the master copy returned while the prohibition remained.",
+    "quoted_reason": {
+      "text": "the subject complaint of petitioners cannot be given due course while the above-mentioned cases are still pending…",
+      "attributed_to": "MTRCB Hearing and Adjudication Committee, quoted in the Supreme Court decision",
+      "source_url": "https://lawphil.net/judjuris/juri2007/dec2007/gr_161422_2007.html"
+    },
+    "last_verified_screening": null,
+    "known_copy": {
+      "holder": "Venus Films / Federico Natividad",
+      "format": "master copy (seized, later ordered returned)",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://lawphil.net/judjuris/juri2007/dec2007/gr_161422_2007.html",
+        "publisher": "Lawphil / Supreme Court of the Philippines",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://asg.ph/insights/balancing-artistic-freedom-and-reputation-the-butakal-case-and-mtrcbs-powers",
+        "publisher": "Office of the Solicitor General",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_films_banned_in_the_Philippines",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "The film was scheduled to open on 8 Sept 1999. The MTRCB recalled it after the Chiong family complained that it exploited a pending rape-murder case. In 2007 the Supreme Court ordered the master copy returned but did not lift the prohibition. No legal copy was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "orapronobis",
+    "title": "Orapronobis",
+    "original_title": "Fight for Us",
+    "year": 1989,
+    "type": "feature",
+    "director": "Lino Brocka",
+    "runtime_min": 94,
+    "festivals": [
+      {
+        "festival": "Cannes",
+        "year": 1989,
+        "section": "Out of Competition"
+      }
+    ],
+    "status": "unavailable",
+    "cause": "never_distributed",
+    "status_detail": "Brocka's Cannes-premiered film was never given a Philippine theatrical release; no formal lifting of the censors' ban and no legal streaming found.",
+    "quoted_reason": {
+      "text": "Lino Brocka’s “Orapronobis” has the unfortunate status of still being haunted by the local censors board’s ban against its “subversive” message, three and a half decades later.",
+      "attributed_to": "Asian Movie Pulse",
+      "source_url": "https://asianmoviepulse.com/2026/01/orapronobis-1989/"
+    },
+    "last_verified_screening": {
+      "date": "1989-05-11",
+      "venue": "Cannes Film Festival, France",
+      "source_url": "https://en.wikipedia.org/wiki/Fight_for_Us"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fight_for_Us",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://mubi.com/en/us/films/orapronobis",
+        "publisher": "MUBI",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://asianmoviepulse.com/2026/01/orapronobis-1989/",
+        "publisher": "Asian Movie Pulse",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://filipiknow.net/controversial-filipino-films-and-tv-shows/",
+        "publisher": "FilipiKnow",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Filed as unavailable rather than banned because no quotable regulator or court decision was located. Asian Movie Pulse reports no formal lifting of the ban and that Brocka lost the court case. An unofficial full-length upload circulates online; it is not linked. MUBI says the film is not currently playing. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "milagro-sa-porta-vaga",
+    "title": "Milagro sa Porta Vaga",
+    "original_title": null,
+    "year": 1982,
+    "type": "feature",
+    "director": "Florencio Orbeta",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "1982 Julie Vega religious drama; only a production still is known and no archive copy has been located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1982-01-15",
+      "venue": "Philippine cinemas (venue not specified)",
+      "source_url": "https://www.imdb.com/title/tt2375313/"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.imdb.com/title/tt2375313/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://lmpdatabase.miraheze.org/wiki/Milagro_sa_Porta_Vaga_(lost_religious_drama_film;_1982)",
+        "publisher": "Lost Media Philippines Database",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.facebook.com/LutongCavite/posts/the-sole-production-still-of-the-missing-film-milagro-sa-porta-vaga-1982the-orig/911442101000364/",
+        "publisher": "Lutong Cavite (Facebook)",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://video48.blogspot.com/2009/07/julie-vega-in-milagro-sa-porta-vaga.html",
+        "publisher": "Video 48",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "Lost-media communities call it lost, and a heritage page says only one production still survives. No archive or historian statement was located, so the record is filed as unavailable, not lost. LMP spells the director's surname Orbenta; IMDb gives Orbeta. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "agent-00",
+    "title": "Agent 00",
+    "original_title": null,
+    "year": 1981,
+    "type": "feature",
+    "director": "Eddie Nicart",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "1981 Weng Weng film; no print located. A YouTube upload labelled with the alternate title is unverified and not linked.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1981-05-29",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.imdb.com/title/tt1149369/"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.imdb.com/title/tt1149369/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://mubi.com/en/us/films/agent-00",
+        "publisher": "MUBI",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://lostmediaarchive.fandom.com/wiki/Agent_00_(lost_Filipino_Tagalog_Movie;_1981)",
+        "publisher": "Lost Media Archive",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "IMDb trivia and lost-media communities describe Agent 00 as lost with no existing prints, but no archive or historian statement was located. A YouTube upload titled 'Agent 00: For U'r Height Only' circulates; its identity and rights status are unverified, so it is not linked. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "scotch-on-the-rocks",
+    "title": "Scotch on the Rocks to Remember, Black Coffee to Forget",
+    "original_title": null,
+    "year": 1976,
+    "type": "feature",
+    "director": "Ishmael Bernal",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "1976 Ishmael Bernal film with no located print; widely described as lost, but no archive or historian statement meets the lost evidence bar.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1976",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.imdb.com/title/tt0387568/"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.imdb.com/title/tt0387568/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://letterboxd.com/film/scotch-on-the-rocks-to-remember-black-coffee-to-forget/",
+        "publisher": "Letterboxd",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.facebook.com/bobbyasuarezofficial/videos/the-50-year-mystery-of-a-lost-filmwhat-became-of-scotch-on-the-rocks-to-remember/2145054369692195/",
+        "publisher": "Bobby A. Suarez (Facebook)",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "Letterboxd's synopsis calls it 'a lost film from Ishmael Bernal'; Bobby A. Suarez's video calls it a 50-year mystery. Neither is an archive or historian statement, so the record is filed as unavailable. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "pinagbuklod-ng-langit",
+    "title": "Pinagbuklod ng Langit",
+    "original_title": null,
+    "year": 1969,
+    "type": "feature",
+    "director": "Eddie Garcia",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "The 1969 sequel to Iginuhit ng Tadhana; film histories describe it as lost and no copy has been located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1969-07-27",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.imdb.com/title/tt0189001/"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.imdb.com/title/tt0189001/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Iginuhit_ng_Tadhana_(The_Ferdinand_E._Marcos_Story)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.sinegang.ph/film-tv/iginuhit-ng-tadhana-deep-dive",
+        "publisher": "Sinegang",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "Sinegang describes the sequel as seeming to be lost. No archive or historian statement naming a surviving copy was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "batman-fights-dracula",
+    "title": "Batman Fights Dracula",
+    "original_title": null,
+    "year": 1967,
+    "type": "feature",
+    "director": "Leody M. Diaz",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "Released in 1967; no print has been located. Researchers call it lost, but no archive or historian statement meets the evidence bar.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1967-06-03",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.esquiremag.ph/culture/movies-and-tv/batman-fights-dracula-lost-film-a00289-20201027"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.esquiremag.ph/culture/movies-and-tv/batman-fights-dracula-lost-film-a00289-20201027",
+        "publisher": "Esquire Philippines",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Batman_Fights_Dracula",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0061386/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Esquire Philippines calls it a lost film and dates its release to 3 June 1967. No archive or historian statement was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "iginuhit-ng-tadhana",
+    "title": "Iginuhit ng Tadhana",
+    "original_title": "The Ferdinand E. Marcos Story",
+    "year": 1965,
+    "type": "feature",
+    "director": "Mar S. Torres, Jose de Villa and Conrado Conde",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "distribution_ended",
+    "status_detail": "The Board of Censors suspended its 1965 release, then allowed it to resume; no legal copy is currently offered.",
+    "quoted_reason": {
+      "text": "Officials of the board said that the board voted to suspend the exhibition of the movie, “Iginuhit ng Tadhana” (Destined by Fate) because its producer failed to submit it for preview by the board en banc or by the entire board.",
+      "attributed_to": "Board of Censors officials, quoted by The Manila Times via Video 48",
+      "source_url": "https://video48.blogspot.com/2008/05/september-3-1965-movie-on-marcos.html"
+    },
+    "last_verified_screening": {
+      "date": "1965",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.sinegang.ph/film-tv/iginuhit-ng-tadhana-deep-dive"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://video48.blogspot.com/2008/05/september-3-1965-movie-on-marcos.html",
+        "publisher": "Video 48",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.sinegang.ph/film-tv/iginuhit-ng-tadhana-deep-dive",
+        "publisher": "Sinegang",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Iginuhit_ng_Tadhana_(The_Ferdinand_E._Marcos_Story)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0371738/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The suspension was temporary; the film resumed its theatrical run and became a campaign asset for Marcos. Full-film uploads circulate online but are not linked. No legal streaming or archive access was found. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "dyesebel-1953",
+    "title": "Dyesebel",
+    "original_title": null,
+    "year": 1953,
+    "type": "feature",
+    "director": "Gerardo de Leon",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "rights_unclear",
+    "status_detail": "A rare 1953 adaptation; ABS-CBN Film Restoration says no copy survives, while a 2005 i-Witness account reports a Dyesebel print in a Thai archive.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1953",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://www.imdb.com/title/tt0488390/"
+    },
+    "known_copy": {
+      "holder": "Thai film archive (reported; unconfirmed)",
+      "format": "print (completeness unknown)",
+      "access": "not public; not catalogued"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.facebook.com/filmrestorationabscbn/posts/dalagang-bukid-1919-darna-1951-and-dyesebel-1953-are-films-that-no-longer-exist-/738696936274020/",
+        "publisher": "ABS-CBN Film Restoration (Facebook)",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0488390/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://mermaidfiction.miraheze.org/wiki/Dyesebel_(1953_film)",
+        "publisher": "Mermaid Fiction Database",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dyesebel",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://jeksterville.blogspot.com/2005/05/rps-lost-film-treasures.html",
+        "publisher": "Jeksterville (blog)",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "ABS-CBN Film Restoration states that no copy survives, while a 2005 i-Witness account reports a Dyesebel print in a Thai archive. The two claims conflict. No copy has been confirmed, catalogued, or made legally accessible, so the film is filed as unavailable rather than lost. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "korea-1952",
+    "title": "Korea",
+    "original_title": null,
+    "year": 1952,
+    "type": "feature",
+    "director": "Lamberto V. Avellana",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "A 1952 LVN war film written by Benigno Aquino Jr.; film histories consider it lost and no copy has been located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1952",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://en.wikipedia.org/wiki/Korea_(1952_film)"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Korea_(1952_film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "Wikipedia describes the film as considered lost. No archive or historian statement naming a surviving copy was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "darna-1951",
+    "title": "Darna",
+    "original_title": null,
+    "year": 1951,
+    "type": "feature",
+    "director": "Fernando Poe Sr.",
+    "runtime_min": 90,
+    "festivals": [],
+    "status": "partially_found",
+    "cause": null,
+    "status_detail": "Long thought lost; a 40-minute, silent, incomplete copy was found in Thailand in 2005.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1951-05-31",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://en.wikipedia.org/wiki/Darna_(1951_film)"
+    },
+    "known_copy": {
+      "holder": "Thai film archive (reported holding; examined by Howie Severino/i-Witness)",
+      "format": "40-minute incomplete copy, no audio",
+      "access": "not public"
+    },
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Darna_(1951_film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://jeksterville.blogspot.com/2005/05/rps-lost-film-treasures.html",
+        "publisher": "Jeksterville (blog)",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "The first Darna film. The surviving copy covers only scenes with the villain Valentina and has no audio. No legal streaming, VOD or archive access was found as of 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "secreto-de-confesion-1939",
+    "title": "Secreto de Confesión",
+    "original_title": "Secrets of Confession",
+    "year": 1939,
+    "type": "feature",
+    "director": "Fausto Galaurán",
+    "runtime_min": 90,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "The first Spanish-language Filipino film; all copies were reportedly destroyed in the bombing of Manila in World War II.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1939",
+      "venue": "Philippine theaters (venue not specified)",
+      "source_url": "https://en.wikipedia.org/wiki/Secreto_de_confesi%C3%B3n_(film)"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Secreto_de_confesi%C3%B3n_(film)",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0974632/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "reported",
+    "notes": "Film histories state that all existing copies were lost during the U.S. bombing of Manila. No archive or historian statement naming a surviving copy was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "ang-batang-tulisan",
+    "title": "Ang Batang Tulisan",
+    "original_title": "The Young Bandit",
+    "year": 1938,
+    "type": "feature",
+    "director": "Rod Avlas",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "A 1938 film withdrawn by the censors; film histories describe it as lost and no copy has been located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1938",
+      "venue": "Fox Theater and Savoy Theater, Manila",
+      "source_url": "https://www.facebook.com/61560883499757/posts/ang-batang-tulisan-the-young-bandit-released-in-1938-and-premiered-simultaneousl/122229278276362783/"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.imdb.com/title/tt0497169/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.esquiremag.ph/culture/movies-and-tv/15-most-controversial-and-banned-films-in-the-philippines-that-you-have-to-watch-a1926-20191002-lfrm",
+        "publisher": "Esquire Philippines",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_films_banned_in_the_Philippines",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.facebook.com/61560883499757/posts/ang-batang-tulisan-the-young-bandit-released-in-1938-and-premiered-simultaneousl/122229278276362783/",
+        "publisher": "Philippine Movie Royalty (Facebook)",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "The film was withdrawn from exhibition by the Board of Censors for depicting a priest in a villainous role and using a hypodermic syringe as a murder weapon. A community archive page says no surviving prints are known. No archive or historian statement was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "tiniente-rosario",
+    "title": "Tiniente Rosario",
+    "original_title": "Teniente Rosario",
+    "year": 1937,
+    "type": "feature",
+    "director": "Octavio Silos",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "A 1937 pre-war war film; film histories describe it as lost and no copy has been located.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1937-06-17",
+      "venue": "Fox and Savoy Theater, Manila",
+      "source_url": "https://en.wikipedia.org/wiki/Tiniente_Rosario"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tiniente_Rosario",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.imdb.com/title/tt0791585/",
+        "publisher": "IMDb",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "The film is considered lost in film histories; no archive or historian statement naming a surviving copy was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "diwata-ng-karagatan",
+    "title": "Diwata ng Karagatan",
+    "original_title": "Ligaya, fille des îles",
+    "year": 1936,
+    "type": "feature",
+    "director": "Carlos Vander Tolosa",
+    "runtime_min": 44,
+    "festivals": [],
+    "status": "found",
+    "cause": null,
+    "status_detail": "A 44-minute French-language version was identified at CINEMATEK in 2025; the original Filipino cut is not known to survive.",
+    "quoted_reason": {
+      "text": "Since after its last exhibition at Fox Theater in Manila, nothing has been heard of it until the war broke out in 1941. All movies in Manila disappeared with the war. Thankfully, a copy of the film has now been found abroad.",
+      "attributed_to": "Nick Deocampo, film historian, quoted by CINEMATEK",
+      "source_url": "https://cinematek.be/en/dossiers/2025/rediscovery-of-lost-filipino-classic-film-in-the-cinematek-archive"
+    },
+    "last_verified_screening": {
+      "date": "1944",
+      "venue": "Belgium (European screenings recorded 1939–1944)",
+      "source_url": "https://cinematek.be/en/dossiers/2025/rediscovery-of-lost-filipino-classic-film-in-the-cinematek-archive"
+    },
+    "known_copy": {
+      "holder": "CINEMATEK (Royal Belgian Film Archive)",
+      "format": "35mm nitrate; 2003 safety copy",
+      "access": "archive holding; access policy not stated; no public streaming"
+    },
+    "where_to_watch": [
+      {
+        "platform": "CINEMATEK archive — holding; access by inquiry",
+        "url": "https://cinematek.be/en/dossiers/2025/rediscovery-of-lost-filipino-classic-film-in-the-cinematek-archive",
+        "note": "No public streaming or home video release announced. Contact the archive directly; the dossier does not state a public access policy."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://cinematek.be/en/dossiers/2025/rediscovery-of-lost-filipino-classic-film-in-the-cinematek-archive",
+        "publisher": "CINEMATEK",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2025/11/01/2484160/pre-war-filipino-film-diwata-ng-karagatan-found-belgium-now-oldest-surviving-copy",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://upd.edu.ph/deocampo-finds-oldest-filipino-film/",
+        "publisher": "University of the Philippines Diliman",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Diwata_ng_Karagatan",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "The only known surviving copy is a shortened French-language version catalogued as Ligaya, fille des îles. It was deposited at CINEMATEK in 1969 and a safety copy was made in 2003. The original Filipino cut is not known to survive. Discovery recorded 2025.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "dalagang-bukid",
+    "title": "Dalagang Bukid",
+    "original_title": null,
+    "year": 1919,
+    "type": "feature",
+    "director": "José Nepomuceno",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "lost",
+    "cause": null,
+    "status_detail": "The first Filipino feature; ABS-CBN Film Restoration states that no copy survives on any format.",
+    "quoted_reason": {
+      "text": "Dalagang Bukid (1919), Darna (1951), and Dyesebel (1953) are films that no longer exist on any format…",
+      "attributed_to": "ABS-CBN Film Restoration",
+      "source_url": "https://www.facebook.com/filmrestorationabscbn/posts/dalagang-bukid-1919-darna-1951-and-dyesebel-1953-are-films-that-no-longer-exist-/738696936274020/"
+    },
+    "last_verified_screening": {
+      "date": "1919-09-12",
+      "venue": "Teatro de la Comedia, Manila",
+      "source_url": "https://en.wikipedia.org/wiki/Dalagang_Bukid"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://www.facebook.com/filmrestorationabscbn/posts/dalagang-bukid-1919-darna-1951-and-dyesebel-1953-are-films-that-no-longer-exist-/738696936274020/",
+        "publisher": "ABS-CBN Film Restoration (Facebook)",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2019/09/11/1950661/sine-sandaan-looks-back-100-years-philippine-cinema",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dalagang_Bukid",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "confirmed",
+    "notes": "ABS-CBN Film Restoration states that no copy survives on any format. Leo Katigbak of ABS-CBN Film Archives discusses the low survival rate for pre-war Philippine film in a 2026 interview. The film premiered on 12 Sept 1919; IMDb lists 25 Sept 1919. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  },
+  {
+    "id": "la-venganza-de-don-silvestre",
+    "title": "La Venganza de Don Silvestre",
+    "original_title": null,
+    "year": 1919,
+    "type": "feature",
+    "director": "José Nepomuceno",
+    "runtime_min": null,
+    "festivals": [],
+    "status": "unavailable",
+    "cause": "no_known_rights_holder",
+    "status_detail": "The 1919 sequel to Dalagang Bukid; no copy is known and film histories treat it as lost.",
+    "quoted_reason": null,
+    "last_verified_screening": {
+      "date": "1919-10-12",
+      "venue": "Manila (venue not specified)",
+      "source_url": "https://en.wikipedia.org/wiki/Dalagang_Bukid"
+    },
+    "known_copy": null,
+    "where_to_watch": [],
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dalagang_Bukid",
+        "publisher": "Wikipedia",
+        "retrieved": "2026-10-31"
+      },
+      {
+        "url": "https://www.philstar.com/entertainment/2026/08/17/2549804/philippine-cinema-faces-urgent-preservation-challenge",
+        "publisher": "The Philippine Star",
+        "retrieved": "2026-10-31"
+      }
+    ],
+    "confidence": "unverified",
+    "notes": "The sequel premiered on 12 Oct 1919, a month after Dalagang Bukid. No archive or historian statement specifically naming a surviving copy of the sequel was located. Availability checked 31 Oct 2026.",
+    "availability_last_checked": "2026-10-31"
+  }
+]
