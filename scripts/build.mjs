@@ -386,6 +386,20 @@ function buildAssets() {
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), geolocation=(), microphone=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'inline-speculation-rules'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+
+${BASE_PATH}/
+  Cache-Control: public, max-age=0, must-revalidate
+
+${BASE_PATH}/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+${BASE_PATH}/film/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+${BASE_PATH}/hard-to-find/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+${BASE_PATH}/404.html
   Cache-Control: public, max-age=0, must-revalidate
 
 ${BASE_PATH}/assets/*
