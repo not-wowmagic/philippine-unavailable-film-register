@@ -516,7 +516,7 @@ function renderStats() {
   const counts = countByStatus(state.films);
   const items = [
     ["Last checked", formatShortDate(datasetChecked), true],
-    ["Entries", state.films.length, false],
+    ["Records", state.films.length, false],
     ["Unavailable", counts.get("unavailable") || 0, false],
     ["Banned", counts.get("banned") || 0, false],
     ["Lost", counts.get("lost") || 0, false],
